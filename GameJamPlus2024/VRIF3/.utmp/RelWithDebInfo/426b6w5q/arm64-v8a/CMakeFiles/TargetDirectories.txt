@@ -1,0 +1,5 @@
+C:/Users/Malab/Documents/Unity/VRIF3/.utmp/RelWithDebInfo/426b6w5q/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Malab/Documents/Unity/VRIF3/.utmp/RelWithDebInfo/426b6w5q/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Malab/Documents/Unity/VRIF3/.utmp/RelWithDebInfo/426b6w5q/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Malab/Documents/Unity/VRIF3/.utmp/RelWithDebInfo/426b6w5q/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Malab/Documents/Unity/VRIF3/.utmp/RelWithDebInfo/426b6w5q/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
