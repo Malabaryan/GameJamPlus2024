@@ -1431,12 +1431,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e18499591e59a4a4f93acca3676f0891,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e18499591e59a4a4f93acca3676f0891,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e18499591e59a4a4f93acca3676f0891,
         type: 3}
@@ -1451,7 +1451,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e18499591e59a4a4f93acca3676f0891,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 159.35062
+      value: 103.8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e18499591e59a4a4f93acca3676f0891,
         type: 3}
@@ -2801,6 +2801,21 @@ PrefabInstance:
     - target: {fileID: 1479486906565842700, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227001356480987168, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: EditorOnly
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227001356480987168, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: EmulatorEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227001356480987168, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: RequireGameFocus
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
