@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Weapons.unity
     guid: 2626939ed08e1ec41bee0433a7f068d9
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Scenes/XR Demo.unity
     guid: a1360534006d3f845bc79b46b93cfec5
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Scene Transitioning.unity
     guid: 9d7c9629abf9c99449e358b0938b47d0
+  - enabled: 1
+    path: Assets/Scenes/Ship.unity
+    guid: 6d455d416351cc24ab25a5bd0d46829b
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Physics Hands.unity
     guid: 34a4579517c578e4080d0a6ef2c96294
