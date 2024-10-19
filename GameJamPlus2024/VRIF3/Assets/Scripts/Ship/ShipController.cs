@@ -9,7 +9,7 @@ public class ShipController : MonoBehaviour {
     [Header("Engine Properties")]
     public float MotorTorque = 500f;
     public float MaxSpeed = 30f;
-
+    public ShipPump EnginePump;
     public float MaxSteeringAngle = 45f;
 
     [Header("Steering Grabbable")]
@@ -158,7 +158,7 @@ public class ShipController : MonoBehaviour {
 
         Quaternion turnRotation = Quaternion.Euler(0f, MaxSteeringAngle * SteeringAngle, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
-        rb.AddForce(transform.forward * MotorTorque * (float)torqueInput);
+        rb.AddForce(transform.forward * MotorTorque * (float)EnginePump.CurrentValue);
         
     }
 
