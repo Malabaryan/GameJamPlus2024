@@ -11,7 +11,7 @@ public class ShipController : MonoBehaviour {
     public float MaxSpeed = 30f;
     public ShipPump EnginePump;
     public float MaxSteeringAngle = 45f;
-
+    public float AnchorBreakWeight = 400;
     [Header("Steering Grabbable")]
     [Tooltip("If true and SteeringGrabbable is being held, the right / left trigger will act as input for acceleration / defceleration.")]
     public bool CheckTriggerInput = true;
@@ -50,7 +50,7 @@ public class ShipController : MonoBehaviour {
 
     Vector3 initialPosition;
     Rigidbody rb;
-
+    private float originalMass;
     bool wasHoldingSteering, isHoldingSteering;
 
     public Transform DriverSeatTransform;
@@ -58,6 +58,7 @@ public class ShipController : MonoBehaviour {
     void Start() {
         rb = GetComponent<Rigidbody>();
         initialPosition = transform.position;
+        originalMass = rb.mass;
     }
 
     // Update is called once per frame
@@ -143,7 +144,16 @@ public class ShipController : MonoBehaviour {
             SetMotorTorqueInput(0);
         }
     }
+
+    public void AnchorBreak()
+    {
+        rb.mass = originalMass + AnchorBreakWeight;
+    }
         
+    public void RemoveAnchor()
+    {
+        rb.mass = originalMass;
+    }
     void FixedUpdate() {
 
         // Update speedometer
