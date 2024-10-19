@@ -13,9 +13,9 @@ public class WateringCanBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (grabbableRef.BeingHeld) { 
-            waterCollider.SetActive(true);
-        }
-        Debug.Log("ANGLES: " + transform.localEulerAngles);
+        //if () { 
+            waterCollider.SetActive(grabbableRef.BeingHeld && transform.localEulerAngles.x > 30f && transform.localEulerAngles.x < 65f);
+        //}
+        Debug.Log("ANGLES: " + transform.localEulerAngles.x);
     }
 }
