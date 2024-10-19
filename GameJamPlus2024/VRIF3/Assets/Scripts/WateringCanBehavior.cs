@@ -14,8 +14,7 @@ public class WateringCanBehavior : MonoBehaviour
     void Update()
     {
         //if () { 
-            waterCollider.SetActive(grabbableRef.BeingHeld && transform.localEulerAngles.x > 30f && transform.localEulerAngles.x < 65f);
+            waterCollider.SetActive(grabbableRef.BeingHeld && transform.localEulerAngles.x > 40f && transform.localEulerAngles.x < 75f);
         //}
-        Debug.Log("ANGLES: " + transform.localEulerAngles.x);
     }
 }
