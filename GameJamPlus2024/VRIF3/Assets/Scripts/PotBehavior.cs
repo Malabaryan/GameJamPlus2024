@@ -1,21 +1,22 @@
+using System.Collections;
 using UnityEngine;
 
 public class PotBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] GameObject turnipIndicator;
+    [SerializeField] GameObject flower;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.name);
+        if (other.transform.CompareTag("Seed")) {
+            Debug.Log("Planted Seed");
+            turnipIndicator.SetActive(true);
+            Destroy(other.gameObject);
+        }
+
+        if (other.transform.CompareTag("Water"))
+        {
+            flower.SetActive(true);
+        }
     }
 }
