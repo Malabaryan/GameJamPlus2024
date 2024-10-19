@@ -13,26 +13,32 @@ public class SeedBehavior : MonoBehaviour
 
     [SerializeField] SeedType type;
     [SerializeField] private float gravityScale = 0.01f;
+    [SerializeField] private float heightOffset = 0.7f;
+    [SerializeField] private float speedMultiplier = 1.5f;
     [SerializeField] private float maxSpeed = 0.08f;
+    [SerializeField] private float lifetime;
+    
 
     private Grabbable grabbableRef;
     private bool isGrabbedByNet = false;
     private Rigidbody _rb;
+    private float gravityMultiplier;
+    private float currentLifetime = 0f;
 
     private void Start()
     {
-        transform.position = new Vector3(transform.position.x, 1.4f, transform.position.z); //Fixed height spawn for seeds
+        transform.position = new Vector3(transform.position.x, 1.4f + Random.Range(-heightOffset, heightOffset), transform.position.z); //Fixed height spawn for seeds
         grabbableRef = GetComponent<Grabbable>();
         _rb = GetComponent<Rigidbody>();
+        gravityMultiplier = Random.Range(-gravityMultiplier, gravityMultiplier);
     }
 
-    private void Update()
+    void Update()
     {
-        Debug.Log(grabbableRef.BeingHeld);
-        if (grabbableRef.BeingHeld && transform.parent != null) {
-            transform.SetParent(null);
-            isGrabbedByNet = false;
-            Debug.Log("RELEASED!");
+        currentLifetime += Time.deltaTime;
+        if (currentLifetime > lifetime)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -54,6 +60,7 @@ public class SeedBehavior : MonoBehaviour
     {
         if (other.transform.CompareTag("Net"))
         {
+            //Debug.Log("Catched");
             _rb.linearDamping = 2f;
         }
 
@@ -63,6 +70,7 @@ public class SeedBehavior : MonoBehaviour
     {
         if (other.transform.CompareTag("Net"))
         {
+            //Debug.Log("Released");
             _rb.linearDamping = 0.2f;
         }
 
