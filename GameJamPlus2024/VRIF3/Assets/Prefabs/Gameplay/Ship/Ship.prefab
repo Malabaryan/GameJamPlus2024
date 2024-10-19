@@ -1386,13 +1386,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3846320375511152113, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846320375511152113, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: m_SlopeLimit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846320375511152113, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: m_StepOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846320375511152113, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 4010084757767427266, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
         type: 3}
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 4437368030805229627, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: DirectionIndicator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963170824385070306, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a,
+        type: 3}
+      propertyPath: AllowUpDownControls
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3401242546695131931, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98a6e8cf4c4b5c643a033bf6eab1f20a, type: 3}
