@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{f6e55937-945e-404b-88ad-6b65275c37a5}">
-		<property name="assetPath">
-			<value>Music/music_lvl_03_doma_east_theme_bpm_140.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

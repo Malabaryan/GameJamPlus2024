@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{e9a49d55-9347-4ca5-8cda-35d84b8babfc}">
-		<property name="assetPath">
-			<value>Music/music_lvl_02_electronic_layer_03.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

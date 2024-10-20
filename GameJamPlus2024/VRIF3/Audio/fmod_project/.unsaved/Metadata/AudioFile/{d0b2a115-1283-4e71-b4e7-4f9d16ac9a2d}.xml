@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{d0b2a115-1283-4e71-b4e7-4f9d16ac9a2d}">
-		<property name="assetPath">
-			<value>Ambience/City/ambience_city_traffic_passing_7.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

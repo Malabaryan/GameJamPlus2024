@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{2e57fd17-e2c2-4cdb-8143-63a19d64759f}">
-		<property name="assetPath">
-			<value>Ambience/Forest/amb_forest_thunderstorm_02.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

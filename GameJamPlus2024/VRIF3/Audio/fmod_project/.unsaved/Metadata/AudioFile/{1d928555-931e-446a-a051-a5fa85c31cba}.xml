@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{1d928555-931e-446a-a051-a5fa85c31cba}">
-		<property name="assetPath">
-			<value>Weapons/M4/weapons_m4_auto_01.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

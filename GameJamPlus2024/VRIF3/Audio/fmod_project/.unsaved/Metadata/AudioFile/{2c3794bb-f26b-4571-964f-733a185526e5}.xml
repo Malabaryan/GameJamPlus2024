@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{2c3794bb-f26b-4571-964f-733a185526e5}">
-		<property name="assetPath">
-			<value>Vehicles/Car Engine/veh_car_engine_190E_01104.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
