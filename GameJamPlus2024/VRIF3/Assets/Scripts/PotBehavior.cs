@@ -10,9 +10,19 @@ public class PotBehavior : MonoBehaviour
     [SerializeField] GameObject grabbableFlower;
     [SerializeField] GameObject grabbableCala;
     [SerializeField] GameObject grabbableHeliconia;
+    [SerializeField] float spawnCooldown = 10f;
 
     private bool hasBeenPlanted = false;
     private SeedBehavior.SeedType seedType;
+
+    private float currentCooldown = 0f;
+
+    private void Update()
+    {
+        if (currentCooldown < spawnCooldown) {
+            currentCooldown += Time.deltaTime;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,8 +34,9 @@ public class PotBehavior : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.transform.CompareTag("Water") && hasBeenPlanted)
+        if (other.transform.CompareTag("Water") && hasBeenPlanted && currentCooldown > spawnCooldown)
         {
+            currentCooldown = 0;
             flower.SetActive(true);
             switch (seedType)
             {
@@ -52,15 +63,21 @@ public class PotBehavior : MonoBehaviour
         switch(seedType)
         {
             case SeedBehavior.SeedType.Flower:
-                grabbableFlower.SetActive(true);
+                var instFlower = Instantiate(grabbableFlower, grabbableFlower.transform.position, grabbableFlower.transform.rotation);
+                instFlower.SetActive(true);
+                //grabbableFlower.SetActive(true);
                 break;
 
             case SeedBehavior.SeedType.Heliconia:
-                grabbableHeliconia.SetActive(true);
+                var instFlower2 = Instantiate(grabbableHeliconia, grabbableHeliconia.transform.position, grabbableHeliconia.transform.rotation);
+                instFlower2.SetActive(true);
+                //grabbableHeliconia.SetActive(true);
                 break;
 
             case SeedBehavior.SeedType.Cala:
-                grabbableCala.SetActive(true);
+                var instFlower3 = Instantiate(grabbableCala, grabbableCala.transform.position, grabbableCala.transform.rotation);
+                instFlower3.SetActive(true);
+                //grabbableCala.SetActive(true);
                 break;
         }
             

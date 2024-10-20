@@ -8,6 +8,7 @@ TagManager:
   - Water
   - Net
   - Arrow
+  - GrabbableTP
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Grabbable
   - PostProcess
-  - 
+  - GrabbableTP
   - 
   - 
   - 
