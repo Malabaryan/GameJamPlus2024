@@ -390,8 +390,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Audio/fmod_project/fmod_project.fspro
-  sourceBankPath: Audio/fmod_project/Build
+  sourceProjectPath: ../FMOD/gamejamplus2024/gamejamplus2024.fspro
+  sourceBankPath: ../FMOD/gamejamplus2024/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
