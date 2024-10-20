@@ -1435,22 +1435,22 @@ PrefabInstance:
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000017881396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
@@ -1460,7 +1460,7 @@ PrefabInstance:
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 360
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470573102775820007, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
@@ -1474,24 +1474,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
-      propertyPath: ReturnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
-        type: 3}
-      propertyPath: onAngleChange.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
-        type: 3}
       propertyPath: onValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 208616809433561908}
-    - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
-        type: 3}
-      propertyPath: onValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSteeringAngleInverted
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
