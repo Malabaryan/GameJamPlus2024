@@ -1,11 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
 public class SeedSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject seedPrefab;
+    [SerializeField] private ParticleSystem particles;
     [SerializeField] private float spawnRadius;
     [SerializeField] private int spawnAmount;
     [SerializeField] private float spawnCooldown = 60f;
+
 
     private float currentCooldown = 0f;
 
@@ -22,17 +25,28 @@ public class SeedSpawner : MonoBehaviour
             if (currentCooldown < spawnCooldown) //If in cooldown return without spawning the seeds.
                 return;
 
-            for (int i = 0; i < spawnAmount; i++) { 
-            Instantiate(seedPrefab, 
+            particles.gameObject.SetActive(true);
+            particles.Play();
+
+            StartCoroutine(SpawnSeeds());
+            
+            currentCooldown = 0f;
+        }
+    }
+
+    IEnumerator SpawnSeeds()
+    {
+        yield return new WaitForSeconds(.5f);
+        for (int i = 0; i < spawnAmount; i++)
+        {
+            Instantiate(seedPrefab,
                 new Vector3(
-                    transform.position.x + Random.Range(-spawnRadius, spawnRadius), 
-                    transform.position.y, 
+                    transform.position.x + Random.Range(-spawnRadius, spawnRadius),
+                    transform.position.y,
                     transform.position.z + Random.Range(-spawnRadius, spawnRadius)
                     ),
                 Quaternion.identity
                 );
-            }
-            currentCooldown = 0f;
         }
     }
 }
