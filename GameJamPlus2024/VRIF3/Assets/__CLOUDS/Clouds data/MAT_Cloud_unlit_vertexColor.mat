@@ -69,8 +69,8 @@ Material:
     - _Speed: 0.69
     - _SpeedA: 0.5
     - _SpeedB: 0.34
-    - _SpeedC: 10.36
-    - _TessMax: 10.94
+    - _SpeedC: 0.5
+    - _TessMax: 10
     - _TessMin: 0.7
     - _TessPhongStrength: 0.241
     - _TessValue: 1.2
