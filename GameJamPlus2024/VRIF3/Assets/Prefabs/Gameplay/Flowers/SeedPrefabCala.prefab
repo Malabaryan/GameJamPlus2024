@@ -13,6 +13,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 9795daa46487e8f46800833b48db02ef, type: 2}
+    - target: {fileID: 6429935256934106055, guid: 500a104d0b95c954c84c3ef73b4b24b4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429935256934106055, guid: 500a104d0b95c954c84c3ef73b4b24b4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429935256934106055, guid: 500a104d0b95c954c84c3ef73b4b24b4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8548054896666093566, guid: 500a104d0b95c954c84c3ef73b4b24b4,
         type: 3}
       propertyPath: m_LocalPosition.x
