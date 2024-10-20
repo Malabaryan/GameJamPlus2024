@@ -1597,10 +1597,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorTorque: 1000
-  MaxSpeed: 30
+  MaxSpeed: 20
   EnginePump: {fileID: 3618195115664156449}
   MaxSteeringAngle: 0.2
-  AnchorBreakWeight: 1500
+  AnchorBreakWeight: 0.2
   CheckTriggerInput: 1
   SteeringGrabbable: {fileID: 8983410028458942321}
   EngineOn: 0

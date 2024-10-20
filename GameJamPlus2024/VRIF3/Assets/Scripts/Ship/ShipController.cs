@@ -51,6 +51,7 @@ public class ShipController : MonoBehaviour {
     Vector3 initialPosition;
     Rigidbody rb;
     private float originalMass;
+    private bool breaking;
     bool wasHoldingSteering, isHoldingSteering;
 
     public Transform DriverSeatTransform;
@@ -65,7 +66,10 @@ public class ShipController : MonoBehaviour {
     void Update() {
 
         isHoldingSteering = SteeringGrabbable != null && SteeringGrabbable.BeingHeld;
-
+        if (breaking )
+        {
+            rb.linearVelocity *= AnchorBreakWeight;
+        }
         if (CheckTriggerInput) {
             GetTorqueInputFromTriggers();
         }
@@ -147,12 +151,12 @@ public class ShipController : MonoBehaviour {
 
     public void AnchorBreak()
     {
-        rb.mass = originalMass + AnchorBreakWeight;
+        breaking = true;
     }
-        
+
     public void RemoveAnchor()
     {
-        rb.mass = originalMass;
+        breaking = false;
     }
     void FixedUpdate() {
 
