@@ -158,7 +158,6 @@ namespace BNG
                 {
                     ReturnToCenterAngle();
                     countdownStarted = false;
-                    returnCountdown = ReturnDelay;
                 }
             }
 
@@ -329,6 +328,8 @@ namespace BNG
             if (smoothedAngle < target + 0.02f && smoothedAngle > target - 0.02f)
             {
                 smoothedAngle = target;
+                returnCountdown = ReturnDelay;
+
             }
 
             // Set the target angle to our newly calculated angle

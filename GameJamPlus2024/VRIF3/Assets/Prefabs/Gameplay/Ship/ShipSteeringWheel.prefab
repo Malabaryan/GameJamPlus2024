@@ -887,8 +887,8 @@ MonoBehaviour:
   RotatorObject: {fileID: 7858988501750472872}
   RotationSpeed: 5
   AllowTwoHanded: 1
-  ReturnDelay: 0
-  ReturnToCenter: 1
+  ReturnDelay: 2
+  ReturnToCenter: 0
   ReturnToCenterSpeed: 90
   ReturnToTarget: 1
   ReturnToTargetAngle: 45
