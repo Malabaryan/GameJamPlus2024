@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 53e8e103f0eefb349917fe59ed7e98a7
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4112
+  packageName: Liquid Particles
+  packageVersion: 1.2.3
+  assetPath: Assets/Liquid Particle Systems/Scripts/randomRotate.cs
+  uploadId: 317534
