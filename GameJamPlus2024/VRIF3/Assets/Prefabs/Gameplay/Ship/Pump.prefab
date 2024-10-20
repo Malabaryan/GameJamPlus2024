@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5605293820027117870}
   - component: {fileID: 2768450698036540745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 6438286040766554257}
   - component: {fileID: 3238737730933734481}
   - component: {fileID: 8877819298069597928}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215561888373368238}
   - component: {fileID: 1215561888373368239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GrabPoint LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215561888483686988}
   - component: {fileID: 1215561888483686989}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GrabPoint RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215561888882184769}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GrabPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 1215561888898981960}
   - component: {fileID: 1215561888898981967}
   - component: {fileID: 1215561888898981966}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 1512999778665798460}
   - component: {fileID: 8482722547476788033}
   - component: {fileID: 4549440701456539490}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Accordion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
