@@ -232,7 +232,7 @@ Material:
     - _SrcBlend: 1
     - _Tiling: 1
     - _Tint_Tiling: 0.5
-    - _TotalWindAmount: 0
+    - _TotalWindAmount: 0.464
     - _TrunkFlatColourSwitch: 0
     - _TrunkMetallic: 0
     - _TrunkNormalAmount: 0.5
@@ -240,7 +240,7 @@ Material:
     - _UVSec: 0
     - _WindAmount: 1
     - _WindBaseline: 0.247
-    - _WindDirection: 0
+    - _WindDirection: 0.307
     - _WindDirection1: 0
     - _WindNoiseScale: 1
     - _WindNoiseScale1: 14.76
