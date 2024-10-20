@@ -18,6 +18,7 @@ public class SeedBehavior : MonoBehaviour
     [SerializeField] private float maxSpeed = 0.08f;
     [SerializeField] private float lifetime;
     [SerializeField] private float minHeight = -9;
+    [SerializeField] private GameObject particles;
 
 
     private Grabbable grabbableRef;
@@ -46,6 +47,9 @@ public class SeedBehavior : MonoBehaviour
             Destroy(gameObject);
 
         }
+
+        if(grabbableRef.BeingHeld || grabbableRef)
+            particles.SetActive(false);
     }
 
     private void FixedUpdate()
