@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{f48a6ca3-043b-4757-82f6-9b350a175f04}">
-		<property name="assetPath">
-			<value>Music/music_lvl_01_bleep_c.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

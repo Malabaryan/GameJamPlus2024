@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{521e4c3f-fae3-4c01-83bd-1efb00dcd894}">
-		<property name="assetPath">
-			<value>Ambience/amb_noon_loop.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

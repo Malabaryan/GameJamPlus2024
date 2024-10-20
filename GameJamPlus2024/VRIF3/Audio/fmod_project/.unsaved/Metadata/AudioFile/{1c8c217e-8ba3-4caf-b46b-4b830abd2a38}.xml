@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{1c8c217e-8ba3-4caf-b46b-4b830abd2a38}">
-		<property name="assetPath">
-			<value>Character/Footsteps/footsteps_player_carpet_02.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

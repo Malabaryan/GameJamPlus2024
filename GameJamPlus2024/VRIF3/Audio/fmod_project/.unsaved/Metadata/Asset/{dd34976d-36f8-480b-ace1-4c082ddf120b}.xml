@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="EncodableAsset" id="{dd34976d-36f8-480b-ace1-4c082ddf120b}">
-		<property name="assetPath">
-			<value>Vehicles/</value>
-		</property>
+		<property name="assetPath" />
 		<relationship name="masterAssetFolder">
 			<destination>{429f8749-0d8f-470d-a09b-6d775a872dc6}</destination>
 		</relationship>

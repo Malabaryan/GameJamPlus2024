@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{7bf398e5-964b-473f-9092-3487055a25a9}">
-		<property name="assetPath">
-			<value>Ambience/City/ambience_city_walla_pad.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

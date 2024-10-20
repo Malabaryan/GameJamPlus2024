@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{709099f5-1d9d-4d9d-9015-43bb9371fea7}">
-		<property name="assetPath">
-			<value>Ambience/City/ambience_city_traffic_horn_5.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

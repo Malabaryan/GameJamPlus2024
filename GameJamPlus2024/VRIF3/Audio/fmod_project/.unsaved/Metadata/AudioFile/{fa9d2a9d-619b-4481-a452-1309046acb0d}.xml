@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{fa9d2a9d-619b-4481-a452-1309046acb0d}">
-		<property name="assetPath">
-			<value>Weapons/Bullet Casings/weapons_bullet_casing_03.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>
