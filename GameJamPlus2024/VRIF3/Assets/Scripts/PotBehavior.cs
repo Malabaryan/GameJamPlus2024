@@ -64,6 +64,7 @@ public class PotBehavior : MonoBehaviour
         {
             case SeedBehavior.SeedType.Flower:
                 var instFlower = Instantiate(grabbableFlower, grabbableFlower.transform.position, grabbableFlower.transform.rotation);
+                instFlower.transform.SetParent(transform, true);
                 instFlower.SetActive(true);
                 //grabbableFlower.SetActive(true);
                 break;
@@ -71,12 +72,14 @@ public class PotBehavior : MonoBehaviour
             case SeedBehavior.SeedType.Heliconia:
                 var instFlower2 = Instantiate(grabbableHeliconia, grabbableHeliconia.transform.position, grabbableHeliconia.transform.rotation);
                 instFlower2.SetActive(true);
+                instFlower2.transform.SetParent(transform, true);
                 //grabbableHeliconia.SetActive(true);
                 break;
 
             case SeedBehavior.SeedType.Cala:
                 var instFlower3 = Instantiate(grabbableCala, grabbableCala.transform.position, grabbableCala.transform.rotation);
                 instFlower3.SetActive(true);
+                instFlower3.transform.SetParent(transform, true);
                 //grabbableCala.SetActive(true);
                 break;
         }

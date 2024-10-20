@@ -32,6 +32,7 @@ public class SeedBehavior : MonoBehaviour
         grabbableRef = GetComponent<Grabbable>();
         _rb = GetComponent<Rigidbody>();
         gravityMultiplier = Random.Range(-gravityMultiplier, gravityMultiplier);
+        transform.localEulerAngles = new Vector3(-90, 0, 0);
     }
 
     void Update()
