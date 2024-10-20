@@ -24,7 +24,10 @@ public class ShipPump : MonoBehaviour
     public void CrankPump(bool state)
     {
         if (lastState != state) {
-            CurrentValue = CurrentValue + AddAmount;
+            if (CurrentValue < MaxValue) {
+
+                CurrentValue = CurrentValue + AddAmount;
+            }
         }
     }
     private IEnumerator ReduceValue()

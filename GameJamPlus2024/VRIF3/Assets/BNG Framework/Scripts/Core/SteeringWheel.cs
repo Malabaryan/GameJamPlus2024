@@ -132,6 +132,10 @@ namespace BNG
         /// </summary>
         protected float smoothedAngle;
 
+        private void Start()
+        {
+            returnCountdown = ReturnDelay;
+        }
         void Update()
         {
 
@@ -140,6 +144,8 @@ namespace BNG
             {
                 UpdateAngleCalculations();
                 countdownStarted = false;
+                returnCountdown = ReturnDelay;
+
             }
             else if (ReturnToCenter || ReturnToTarget)
             {
@@ -152,7 +158,7 @@ namespace BNG
                 {
                     ReturnToCenterAngle();
                     countdownStarted = false;
-
+                    returnCountdown = ReturnDelay;
                 }
             }
 
