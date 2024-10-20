@@ -2329,6 +2329,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.50225
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.60847336
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0011
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 1153657280176974045, guid: c10dad8203539c549bf9e3a11f803c98,
         type: 3}
       propertyPath: m_Name
@@ -2339,7 +2364,8 @@ PrefabInstance:
       propertyPath: m_text
       value: "<i>Dandelia</i>\n\nEn el mundo vivo de Dandelia las flores representan
         la paz que acompa\xF1a el viaje. \n\nEres un bot\xE1nico que con su barco
-        volador "
+        volador recolectar\xE1 las semillas de 3 plantas diferentes para hacer un
+        ramo."
       objectReference: {fileID: 0}
     - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
         type: 3}
@@ -2391,7 +2417,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1579140086118636672, guid: c10dad8203539c549bf9e3a11f803c98, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2755,6 +2782,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 603a5973cb7444c4c98e10daf323a851, type: 3}
+--- !u!1001 &872009025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.68516946
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5993462
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0952
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0564
+      objectReference: {fileID: 0}
+    - target: {fileID: 98479223787080683, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153657280176974045, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_Name
+      value: TextBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881611768899887942, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_text
+      value: "C\xF3mo jugar\n\n- Usa el fuelle rojo para avanzar hacia adelante.\n-
+        Usa el tim\xF3n para maniobrar el barco.\n- Usa el ancla para detener el
+        barco. Despu\xE9s, usa la palanca para elevar nuevamente el ancla.\n- Usa
+        arco y flecha para mover los \xE1rboles y levantar las semillas.\n- Usa la
+        red para agarrar las semillas para sembrarlas en las macetas y regarlas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881611768899887942, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 281.865
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.038387742
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9992629
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 175.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103756551765086136, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112695431487244953, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 317.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112695431487244953, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112695431487244953, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000016617
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112695431487244953, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 158.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112695431487244953, guid: c10dad8203539c549bf9e3a11f803c98,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1579140086118636672, guid: c10dad8203539c549bf9e3a11f803c98, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c10dad8203539c549bf9e3a11f803c98, type: 3}
 --- !u!1001 &884814559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7835,10 +7995,35 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9092875374120443843, guid: a9e01851cc24f0c498e92be50f2d0520,
         type: 3}
+    - target: {fileID: 1464158374095547473, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 11.282034
+      objectReference: {fileID: 0}
     - target: {fileID: 2140513108193442899, guid: 3731e2df1d105694cb0736470dbc47ce,
         type: 3}
       propertyPath: m_Name
       value: Fish1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308329424381467194, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -10.895256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894774881822766660, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 49.95996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298800782584940840, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -85.62507
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464793963222102248, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.000010858081
       objectReference: {fileID: 0}
     - target: {fileID: 5578608548002664689, guid: 3731e2df1d105694cb0736470dbc47ce,
         type: 3}
@@ -7923,6 +8108,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8255149780179928424, guid: 3731e2df1d105694cb0736470dbc47ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.39845642
+      objectReference: {fileID: 0}
     - target: {fileID: 8348039082223641010, guid: 3731e2df1d105694cb0736470dbc47ce,
         type: 3}
       propertyPath: m_Animations.Array.size
@@ -7942,6 +8132,12 @@ PrefabInstance:
     - {fileID: 8247018451858674240, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
     - {fileID: 5912265274186971946, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
     - {fileID: 2924491648703269073, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 741801714128621929, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 3395445346327103581, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 3702186551931426207, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 8492404719792429777, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 6171281133427127227, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
+    - {fileID: 3404087070383849536, guid: 3731e2df1d105694cb0736470dbc47ce, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2140513108193442899, guid: 3731e2df1d105694cb0736470dbc47ce,
@@ -8759,3 +8955,4 @@ SceneRoots:
   - {fileID: 1419421707}
   - {fileID: 4392280905793417558}
   - {fileID: 780540582}
+  - {fileID: 872009025}
