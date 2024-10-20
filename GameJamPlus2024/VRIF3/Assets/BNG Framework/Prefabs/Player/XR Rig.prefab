@@ -4858,8 +4858,6 @@ GameObject:
   - component: {fileID: 6552592445350430801}
   - component: {fileID: 5883667856760302794}
   - component: {fileID: 2981720430411257789}
-  - component: {fileID: 1334413062160626248}
-  - component: {fileID: 6179961375502454275}
   - component: {fileID: 8622308822696291321}
   m_Layer: 9
   m_Name: PlayerController
@@ -4904,7 +4902,7 @@ MonoBehaviour:
   CenterEyeAnchor: {fileID: 5117709272728151529}
   GroundedLayers:
     serializedVersion: 2
-    m_Bits: 1281
+    m_Bits: 257
   DistanceFromGround: 0
   DistanceFromGroundOffset: 0
   MinimumCapsuleHeight: 0.4
@@ -4977,8 +4975,8 @@ MonoBehaviour:
   MovementForce: 500
   MaxHorizontalVelocity: 5
   MaxVerticalVelocity: 10
-  StepHeight: 0.1
-  MaxSlopeAngle: 45
+  StepHeight: 0
+  MaxSlopeAngle: 0
   MovementMaterial: {fileID: 0}
   FrictionMaterial: {fileID: 0}
   MovementDrag: 1
@@ -4997,11 +4995,11 @@ MonoBehaviour:
     type: 3}
   StrafeSpeed: 1
   StrafeSprintSpeed: 1.25
-  JumpForce: 3
+  JumpForce: 0
   JumpInput: 00000000
   JumpAction: {fileID: 3598031526004978682, guid: e39f4b35a6db18348b41eb0262520e69,
     type: 3}
-  AirControl: 1
+  AirControl: 0
   AirControlSpeed: 1
   Magnitude: 0
   GroundContacts: 0
@@ -5083,52 +5081,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423761fea517b5a45bf554817601eb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GravityEnabled: 1
+  GravityEnabled: 0
   Gravity: {x: 0, y: -7.81, z: 0}
   LabelToUpdate: {fileID: 0}
---- !u!114 &1334413062160626248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9166498488684277474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494e659c238ebc5428bdb4e8d43de9ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SlowTimeScale: 0.25
-  YKeySlowsTime: 1
-  SlowTimeAction: {fileID: 4152163271159088786, guid: e39f4b35a6db18348b41eb0262520e69,
-    type: 3}
-  SlowTimeClip: {fileID: 8300000, guid: 3264b135b94635f42a09d672b19cae85, type: 3}
-  SpeedupTimeClip: {fileID: 8300000, guid: 8a4a5bd0b5270024ca91ab9d88bce279, type: 3}
-  SetFixedDelta: 0
-  CheckInput: 1
-  ForceTimeScale: 0
---- !u!114 &6179961375502454275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9166498488684277474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce69dd88838504c4c988eb0d63cad28a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeftControllerTransform: {fileID: 5119220787211519073}
-  RightControllerTransform: {fileID: 5118943030497372719}
-  ClimbingCapsuleHeight: 0.5
-  ClimbingCapsuleCenter: 0
-  ApplyHapticsOnGrab: 1
-  VibrateFrequency: 0.3
-  VibrateAmplitude: 0.1
-  VibrateDuration: 0.1
-  GrippingClimbable: 0
-  ClimbingVelocity: 2000
 --- !u!114 &8622308822696291321
 MonoBehaviour:
   m_ObjectHideFlags: 0
