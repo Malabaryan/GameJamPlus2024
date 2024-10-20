@@ -17,7 +17,8 @@ public class SeedBehavior : MonoBehaviour
     [SerializeField] private float speedMultiplier = 1.5f;
     [SerializeField] private float maxSpeed = 0.08f;
     [SerializeField] private float lifetime;
-    
+    [SerializeField] private float minHeight = -9;
+
 
     private Grabbable grabbableRef;
     private bool isGrabbedByNet = false;
@@ -39,6 +40,10 @@ public class SeedBehavior : MonoBehaviour
         if (currentLifetime > lifetime)
         {
             Destroy(gameObject);
+        }
+        if (this.transform.position.y < minHeight) {
+            Destroy(gameObject);
+
         }
     }
 

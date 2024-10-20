@@ -68,7 +68,7 @@ public class ShipController : MonoBehaviour {
         isHoldingSteering = SteeringGrabbable != null && SteeringGrabbable.BeingHeld;
         if (breaking )
         {
-            rb.linearVelocity *= AnchorBreakWeight;
+            rb.linearVelocity *= AnchorBreakWeight * Time.deltaTime;
         }
         if (CheckTriggerInput) {
             GetTorqueInputFromTriggers();
@@ -152,6 +152,7 @@ public class ShipController : MonoBehaviour {
     public void AnchorBreak()
     {
         breaking = true;
+        EnginePump.CurrentValue = 0;
     }
 
     public void RemoveAnchor()

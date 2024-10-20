@@ -5428,6 +5428,6 @@ MonoBehaviour:
   seedPrefab: {fileID: 8717254805589994265, guid: c7e666ddf1ba54a4c83d93e3d26c4867,
     type: 3}
   particles: {fileID: 7602169519149306396}
-  spawnRadius: 4
-  spawnAmount: 15
+  spawnRadius: 20
+  spawnAmount: 40
   spawnCooldown: 1
