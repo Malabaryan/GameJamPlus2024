@@ -7,11 +7,11 @@ public class SeedBehavior : MonoBehaviour
     public enum SeedType
     {
         Flower,
-        Tulip,
-        Rose
+        Heliconia,
+        Cala
     }
 
-    [SerializeField] SeedType type;
+    public SeedType type;
     [SerializeField] private float gravityScale = 0.01f;
     [SerializeField] private float heightOffset = 0.7f;
     [SerializeField] private float speedMultiplier = 1.5f;
@@ -27,7 +27,7 @@ public class SeedBehavior : MonoBehaviour
 
     private void Start()
     {
-        transform.position = new Vector3(transform.position.x, 1.4f + Random.Range(-heightOffset, heightOffset), transform.position.z); //Fixed height spawn for seeds
+        transform.position = new Vector3(transform.position.x, 1.4f , transform.position.z); //Fixed height spawn for seeds + Random.Range(-heightOffset, heightOffset)
         grabbableRef = GetComponent<Grabbable>();
         _rb = GetComponent<Rigidbody>();
         gravityMultiplier = Random.Range(-gravityMultiplier, gravityMultiplier);
