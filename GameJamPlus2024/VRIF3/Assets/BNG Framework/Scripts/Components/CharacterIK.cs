@@ -25,6 +25,10 @@ namespace BNG {
         public Transform FollowHead;
 
 
+        [Tooltip("(Optional) Assign this transform to check if mounted in vehicle. If this transform's local position is 0, it will have no velocity to prevent the legs from moving quickly while mounted to an object ")]
+        public Transform PlayerTransform;  
+
+
         public bool RaycastFeetPosition = true;
         public LayerMask GroundedLayers;
 
@@ -57,9 +61,10 @@ namespace BNG {
         public Transform HipsJoint;
 
         /// <summary>
-        /// The player our Body will follow
-        /// </summary>
-        public CharacterController FollowPlayer;
+        /// (Legacy) The player our Body will follow
+        /// </summary>        
+        [HideInInspector]
+        public CharacterController FollowPlayer;        
 
         Transform headBone;
         Transform leftShoulderJoint;
@@ -89,6 +94,11 @@ namespace BNG {
                 // Use per frame tracking for simple velocity check
                 velocityTracker.trackingType = VelocityTracker.VelocityTrackingType.PerFrame; 
             }
+
+            // Legacy support
+            if(FollowPlayer != null && PlayerTransform == null) {
+                PlayerTransform = FollowPlayer.transform;
+            }
         }
 
         public Vector3 hideBoneScale = new Vector3(0.0001f, 0.0001f, 0.0001f);
@@ -102,6 +112,9 @@ namespace BNG {
         bool hitRightFoot = false;
         Vector3 rightFootHitPosition;
         Quaternion rightFootHitRotation;
+
+        Vector3 lastPosition;
+        Quaternion lastRotation;
 
         void Update() {
 
@@ -138,8 +151,8 @@ namespace BNG {
             if(ApplyVelocityToAnimator) {
                 // Set "Walking" velocity if we're moving more 
                 if (transform.position != lastPosition && velocityTracker.GetAveragedVelocity().magnitude > 0.1f) {
-                    if(FollowPlayer.transform.parent != null && FollowPlayer.transform.localPosition == Vector3.zero) {
-                        // We are attached to something moving us along
+                    if(PlayerTransform != null && PlayerTransform.parent != null && PlayerTransform.localPosition == Vector3.zero) {
+                        // We are attached to something moving us along; set velocity to 0
                         animator.SetFloat("ForwardVelocity", 0f);
                     }
                     else {
@@ -155,12 +168,7 @@ namespace BNG {
             lastPosition = transform.position;
             lastRotation = transform.rotation;
         }
-
-        Vector3 lastPosition;
-        Quaternion lastRotation;
-
-        public Grabber LeftGrabber;
-
+       
         void OnAnimatorIK() {
             UpdateAnimatorIK();
 

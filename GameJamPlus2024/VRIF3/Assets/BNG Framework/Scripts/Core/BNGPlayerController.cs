@@ -345,6 +345,7 @@ namespace BNG {
                 yPos += ElevateCameraHeight;
             }
 
+            // CameraRig.transform.localPosition = new Vector3(0, yPos, 0);
             CameraRig.transform.localPosition = new Vector3(CameraRig.transform.localPosition.x, yPos, CameraRig.transform.localPosition.z);
         }
 

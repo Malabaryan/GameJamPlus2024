@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 #if UNITY_2018_4_OR_NEWER
 using UnityEngine.XR;
-using static Unity.XR.CoreUtils.XROrigin;
 #endif
 #if STEAM_VR_SDK
 using Valve.VR;
@@ -440,6 +439,10 @@ namespace BNG {
         [HideInInspector]
         public bool ShowInputDebugger = false;
 
+        [Tooltip("If true XR will be force started / stopped. Enable this if XR only initializes once in the editor and then requires a restart. Only executes in the editor. May require restarting Unity after enabling.")]
+        [HideInInspector]
+        public bool ForceStartXRInEditor = false;
+
         /// <summary>
         /// If true  Time.fixedDeltaTime wlil be check for Unity default of 0.02 and forced higher if found.
         /// </summary>
@@ -477,9 +480,15 @@ namespace BNG {
         }
 
         void Start() {
-
+#if UNITY_EDITOR
+            // Patch to fix issue where xr only initializes once before needing to restart Unity
+            //  https://communityforums.atmeta.com/t5/Unity-VR-Development/Meta-XR-Simulator-starts-only-once/m-p/1142983/highlight/true#M23492
+            if (GetSupportsXRInput()) {
+                EnableXR();
+            }
+#endif
             // Set tracking mode to floor, device, etc. on Start
-            if(GetSupportsXRInput()) {
+            if (GetSupportsXRInput()) {
                 SetTrackingOriginMode(TrackingOrigin);
             }
 
@@ -512,8 +521,52 @@ namespace BNG {
             }
 
             SteamVR.Initialize();
-#endif
+#endif            
         }
+#if UNITY_EDITOR
+        public void EnableXR() {
+            if(ForceStartXRInEditor) {
+                StartCoroutine(StartXRCoroutine());
+            }
+        }
+
+        public void DisableXR() {
+            if (UnityEngine.XR.Management.XRGeneralSettings.Instance != null && UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager != null && UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.isInitializationComplete) {
+                UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.StopSubsystems();
+                UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.DeinitializeLoader();
+            } 
+            else {
+                // Debug.LogWarning("XR Manager not initialized. Skipping DisableXR.");
+            }
+        }
+
+        public IEnumerator StartXRCoroutine() {
+            if (UnityEngine.XR.Management.XRGeneralSettings.Instance == null) {
+                UnityEngine.XR.Management.XRGeneralSettings.Instance = UnityEngine.XR.Management.XRGeneralSettings.CreateInstance<UnityEngine.XR.Management.XRGeneralSettings>();
+            }
+
+            if (UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager == null) {
+                yield return new WaitUntil(() => UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager != null);
+            }
+
+            UnityEngine.XR.Management.XRGeneralSettings.Instance?.Manager?.InitializeLoaderSync();
+
+            if (UnityEngine.XR.Management.XRGeneralSettings.Instance?.Manager?.activeLoader == null) {
+                // Debug.LogError("Initializing XR Failed. Check Editor or Player log for details.");
+            } 
+            else {
+                UnityEngine.XR.Management.XRGeneralSettings.Instance?.Manager?.StartSubsystems();
+            }
+        }
+#endif
+
+#if UNITY_EDITOR
+        void OnDestroy() {
+            if (ForceStartXRInEditor) {
+                DisableXR();
+            }
+        }
+#endif
 
         void OnEnable() {
 #if UNITY_WEBGL
@@ -540,7 +593,7 @@ namespace BNG {
             InputDevices.deviceDisconnected -= onDeviceChanged;
 #endif
             DisableActions();
-        }        
+        }
 
         void Update() {
             UpdateDeviceActive();

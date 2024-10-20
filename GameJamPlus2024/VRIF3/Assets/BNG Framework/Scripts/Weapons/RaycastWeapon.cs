@@ -279,6 +279,9 @@ namespace BNG {
         [Tooltip("Unity Event called when PlayEmptyShotSound() method is called")]
         public UnityEvent onPlayedEmptyShotEvent;
 
+        [Tooltip("Unity Event called when EjectMagazine() method is called")]
+        public UnityEvent onEjectMagazineEvent;
+
         /// <summary>
         /// Is the slide / receiver forced back due to last shot
         /// </summary>
@@ -291,6 +294,17 @@ namespace BNG {
         // Magainze currently equipped
         protected Magazine heldMagazine;
 
+
+        protected MagazineSlide magazineSlide {
+            get {
+                if(_ms) {
+                    return _ms;
+                }
+                return _ms = GetComponentInChildren<MagazineSlide>();
+            }
+        }
+        private MagazineSlide _ms;
+
         void Start() {
             weaponRigid = GetComponent<Rigidbody>();
 
@@ -301,7 +315,7 @@ namespace BNG {
                 MuzzleFlashSilencedObject.SetActive(false);
             }
 
-            ws = GetComponentInChildren<WeaponSlide>();            
+            ws = GetComponentInChildren<WeaponSlide>();
 
             updateChamberedBullet();
         }        
@@ -383,10 +397,14 @@ namespace BNG {
             }
         }
 
+
         public virtual void EjectMagazine() {
-            MagazineSlide ms = GetComponentInChildren<MagazineSlide>();
-            if (ms != null) {
-                ms.EjectMagazine();
+            if (magazineSlide != null) {
+                magazineSlide.EjectMagazine();
+            }
+
+            if (onEjectMagazineEvent != null) {
+                onEjectMagazineEvent.Invoke();
             }
         }
 
