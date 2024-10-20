@@ -221,7 +221,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.DefaultCompany.VRIF3
+    Android: com.DarkForestGames.Dandelia
     Standalone: com.DarkForestGames.Dandelia
   buildNumber:
     Standalone: 0
