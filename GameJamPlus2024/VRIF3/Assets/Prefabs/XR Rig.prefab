@@ -5710,9 +5710,6 @@ GameObject:
   - component: {fileID: 8253579928904955754}
   - component: {fileID: 4437368030805229627}
   - component: {fileID: 1992675252795622572}
-  - component: {fileID: 3134876337886416888}
-  - component: {fileID: 2757341436105496109}
-  - component: {fileID: 884503540388377875}
   - component: {fileID: 8455533791136796911}
   m_Layer: 9
   m_Name: PlayerController
@@ -5830,7 +5827,7 @@ MonoBehaviour:
   MovementForce: 500
   MaxHorizontalVelocity: 5
   MaxVerticalVelocity: 10
-  StepHeight: 0.1
+  StepHeight: 0
   MaxSlopeAngle: 45
   MovementMaterial: {fileID: 0}
   FrictionMaterial: {fileID: 0}
@@ -5924,64 +5921,6 @@ MonoBehaviour:
   SnapInputAmount: 0.75
   SmoothTurnSpeed: 40
   SmoothTurnMinInput: 0.1
---- !u!114 &3134876337886416888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044590424453416393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423761fea517b5a45bf554817601eb72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GravityEnabled: 1
-  Gravity: {x: 0, y: -7.81, z: 0}
-  LabelToUpdate: {fileID: 0}
---- !u!114 &2757341436105496109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044590424453416393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494e659c238ebc5428bdb4e8d43de9ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SlowTimeScale: 0.25
-  YKeySlowsTime: 1
-  SlowTimeAction: {fileID: 4152163271159088786, guid: e39f4b35a6db18348b41eb0262520e69,
-    type: 3}
-  SlowTimeClip: {fileID: 8300000, guid: 3264b135b94635f42a09d672b19cae85, type: 3}
-  SpeedupTimeClip: {fileID: 8300000, guid: 8a4a5bd0b5270024ca91ab9d88bce279, type: 3}
-  SetFixedDelta: 0
-  CheckInput: 1
-  ForceTimeScale: 0
---- !u!114 &884503540388377875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044590424453416393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce69dd88838504c4c988eb0d63cad28a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeftControllerTransform: {fileID: 8399699849650210951}
-  RightControllerTransform: {fileID: 1956000117034962488}
-  ClimbingCapsuleHeight: 0.5
-  ClimbingCapsuleCenter: 0
-  ApplyHapticsOnGrab: 1
-  VibrateFrequency: 0.3
-  VibrateAmplitude: 0.1
-  VibrateDuration: 0.1
-  GrippingClimbable: 0
-  ClimbingVelocity: 2000
 --- !u!114 &8455533791136796911
 MonoBehaviour:
   m_ObjectHideFlags: 0
