@@ -4896,7 +4896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveCharacterWithCamera: 1
   RotateCharacterWithCamera: 1
-  ResizeCharacterHeightWithCamera: 1
+  ResizeCharacterHeightWithCamera: 0
   TrackingSpace: {fileID: 5117709272728089495}
   CameraRig: {fileID: 5117709272728151533}
   CenterEyeAnchor: {fileID: 5117709272728151529}

@@ -5811,6 +5811,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1543068924432699219, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: m_Limits.max
+      value: 102.79233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543068924432699219, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: m_Limits.min
+      value: -77.346344
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543068924432699220, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: SwitchTolerance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2114357586621359613, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -5839,6 +5854,16 @@ PrefabInstance:
     - target: {fileID: 5227001356480987168, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
         type: 3}
       propertyPath: RequireGameFocus
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802903876436942195, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: MaxSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913266721441598984, guid: acbaf6cff0e6e2f44b5f2a661e8a753b,
+        type: 3}
+      propertyPath: m_SlopeLimit
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
