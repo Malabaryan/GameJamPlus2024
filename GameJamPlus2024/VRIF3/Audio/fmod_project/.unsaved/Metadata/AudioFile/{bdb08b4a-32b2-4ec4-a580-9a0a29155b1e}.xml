@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{bdb08b4a-32b2-4ec4-a580-9a0a29155b1e}">
-		<property name="assetPath">
-			<value>Ambience/City/ambience_city_walla_chatter_3.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>

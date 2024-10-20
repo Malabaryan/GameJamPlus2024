@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{ebd32256-26fb-4989-b8b5-7f8b750e50f7}">
-		<property name="assetPath">
-			<value>Music/music_lvl_03_east_high_pre_rest_re.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>

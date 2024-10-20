@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{fb92a7c4-c81a-4288-b506-e0d031d34575}">
-		<property name="assetPath">
-			<value>Ambience/Forest/amb_forest_rain_outside_big.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="isStreaming">
 			<value>true</value>
 		</property>

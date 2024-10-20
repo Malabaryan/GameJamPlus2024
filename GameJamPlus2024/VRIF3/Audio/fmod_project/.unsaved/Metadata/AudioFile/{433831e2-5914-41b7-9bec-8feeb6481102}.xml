@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{433831e2-5914-41b7-9bec-8feeb6481102}">
-		<property name="assetPath">
-			<value>Character/Radio/placeholder_640166_main_meco.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>
