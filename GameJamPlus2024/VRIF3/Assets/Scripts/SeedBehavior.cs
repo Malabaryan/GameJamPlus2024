@@ -48,7 +48,7 @@ public class SeedBehavior : MonoBehaviour
 
         }
 
-        if(grabbableRef.BeingHeld || grabbableRef)
+        if(grabbableRef.BeingHeld || isGrabbedByNet)
             particles.SetActive(false);
     }
 
