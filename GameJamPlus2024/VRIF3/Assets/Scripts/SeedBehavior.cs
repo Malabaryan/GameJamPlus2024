@@ -22,7 +22,7 @@ public class SeedBehavior : MonoBehaviour
 
 
     private Grabbable grabbableRef;
-    private bool isGrabbedByNet = false;
+    public bool isGrabbedByNet = false;
     private Rigidbody _rb;
     private float gravityMultiplier;
     private float currentLifetime = 0f;

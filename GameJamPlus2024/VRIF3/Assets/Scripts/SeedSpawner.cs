@@ -42,7 +42,7 @@ public class SeedSpawner : MonoBehaviour
             Instantiate(seedPrefab,
                 new Vector3(
                     transform.position.x + Random.Range(-spawnRadius, spawnRadius),
-                    -7 + Random.Range(-0.5f, 0.5f),
+                    -6.5f + Random.Range(-0.5f, 0.5f),
                     transform.position.z + Random.Range(-spawnRadius, spawnRadius)
                     ),
                 Quaternion.identity
