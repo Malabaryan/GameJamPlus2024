@@ -20523,7 +20523,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 43.351997}
-  - {x: 282.38736, y: -6.307197, z: 43.33073}
+  - {x: 282.41617, y: -6.494654, z: 43.27452}
   - {x: 283.01898, y: -7.6800003, z: 43.362995}
   m_Parameters:
     serializedVersion: 3
@@ -32815,6 +32815,30 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1084998182118194712}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Up
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1084998182118194712}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Down
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1084998182118194712}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
@@ -34260,7 +34284,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 45.312}
-  - {x: 282.43085, y: -6.291385, z: 45.347916}
+  - {x: 282.40802, y: -6.4946413, z: 45.174}
   - {x: 283.01898, y: -7.6800003, z: 45.203}
   m_Parameters:
     serializedVersion: 3
