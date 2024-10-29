@@ -11146,7 +11146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520441197057953502}
   - component: {fileID: 8585659054755162095}
-  - component: {fileID: 717731087769243391}
+  - component: {fileID: 1081367260261616293}
   m_Layer: 0
   m_Name: Chain Simple Start
   m_TagString: Untagged
@@ -11162,7 +11162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285119845009332266}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16036098, y: -0.7680628, z: 0.5828442, w: 0.21132115}
+  m_LocalRotation: {x: 0.16035582, y: -0.76806635, z: 0.58284277, w: 0.21131584}
   m_LocalPosition: {x: 0.000000059604645, y: 0.41000032, z: 0.47048956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11215,14 +11215,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.9480024, y: 2.6330004, z: 0.21552658}
-  - {x: -0.8915738, y: 1.8044022, z: 0.3103108}
-  - {x: -0.83514524, y: 1.0617402, z: 0.40509504}
-  - {x: -0.7787167, y: 0.4739294, z: 0.49987927}
-  - {x: -0.7222881, y: 0.07921493, z: 0.5946635}
-  - {x: -0.66585946, y: -0.12240279, z: 0.68944776}
-  - {x: -0.6094309, y: -0.16916937, z: 0.78423196}
-  - {x: -0.55300236, y: -0.13000003, z: 0.87901616}
+  - {x: 280.68448, y: -4.917, z: 43.351997}
+  - {x: 280.02097, y: -7.6800003, z: 43.746998}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -11282,7 +11276,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
---- !u!114 &717731087769243391
+--- !u!114 &1081367260261616293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11291,12 +11285,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1285119845009332266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9f6c46e88adc64181820ebf9519d12, type: 3}
+  m_Script: {fileID: 11500000, guid: 08dbb2222c8d5b24a9154f4d7935b978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   endPointTransform: {fileID: 4300728036287444535}
-  pointDensity: 3
-  sagAmplitude: 1
+  pointDensity: 1
+  sagAmplitude: 0.2
+  swayMultiplier: 0.1
+  swayXMultiplier: 1
+  swayYMultiplier: 0.5
+  swayFrequency: 0.2
 --- !u!1 &1287797013093975526
 GameObject:
   m_ObjectHideFlags: 0
@@ -20455,7 +20453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7166927128938662588}
   - component: {fileID: 8784723446862873797}
-  - component: {fileID: 1284373277907064491}
+  - component: {fileID: 6066023390948097241}
   m_Layer: 0
   m_Name: Chain Simple Start
   m_TagString: Untagged
@@ -20471,7 +20469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3716029751710783560}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.54534405, y: -0.0037647889, z: 0.0024494207, w: 0.8382003}
+  m_LocalRotation: {x: 0.54534703, y: -0.0037640925, z: 0.002448946, w: 0.8381983}
   m_LocalPosition: {x: 0.000000059604645, y: 0.41000032, z: 0.47048956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20524,15 +20522,9 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.9480025, y: 2.6330004, z: -0.89448935}
-  - {x: -0.9466275, y: 1.9049418, z: -1.0475532}
-  - {x: -0.94525254, y: 1.2351434, z: -1.2006171}
-  - {x: -0.9438775, y: 0.6729957, z: -1.3536808}
-  - {x: -0.9425025, y: 0.25150013, z: -1.5067446}
-  - {x: -0.9411275, y: -0.017754436, z: -1.6598085}
-  - {x: -0.93975246, y: -0.14635676, z: -1.8128724}
-  - {x: -0.9383775, y: -0.16730833, z: -1.9659362}
-  - {x: -0.9370025, y: -0.13000003, z: -2.119}
+  - {x: 281.7945, y: -4.917, z: 43.351997}
+  - {x: 282.41617, y: -6.494654, z: 43.27452}
+  - {x: 283.01898, y: -7.6800003, z: 43.362995}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -20592,7 +20584,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
---- !u!114 &1284373277907064491
+--- !u!114 &6066023390948097241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20601,12 +20593,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3716029751710783560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9f6c46e88adc64181820ebf9519d12, type: 3}
+  m_Script: {fileID: 11500000, guid: 08dbb2222c8d5b24a9154f4d7935b978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   endPointTransform: {fileID: 8107393065993047332}
-  pointDensity: 3
-  sagAmplitude: 1
+  pointDensity: 1
+  sagAmplitude: 0.2
+  swayMultiplier: 0.1
+  swayXMultiplier: 1
+  swayYMultiplier: 0.5
+  swayFrequency: 0.2
 --- !u!1 &3741108888711045421
 GameObject:
   m_ObjectHideFlags: 0
@@ -29536,7 +29532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6097554996124944877}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6601225, y: -0.032677583, z: -0.02876557, w: 0.74989533}
+  m_LocalRotation: {x: -0.6601228, y: -0.032677576, z: -0.028765626, w: 0.7498951}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32819,6 +32815,30 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1084998182118194712}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Up
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1084998182118194712}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Down
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1084998182118194712}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
@@ -34194,7 +34214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 456700490169544979}
   - component: {fileID: 1667644225516177288}
-  - component: {fileID: 8498322091431798982}
+  - component: {fileID: 3235125008441677400}
   m_Layer: 0
   m_Name: Chain Simple Start
   m_TagString: Untagged
@@ -34210,7 +34230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7408035781754528258}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5442056, y: 0.037213862, z: -0.024173478, w: 0.83777744}
+  m_LocalRotation: {x: 0.54420847, y: 0.0372149, z: -0.024174329, w: 0.83777547}
   m_LocalPosition: {x: 0.000000059604645, y: 0.41, z: 0.47048956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34263,15 +34283,9 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 1.012, y: 2.6330001, z: -0.8944896}
-  - {x: 0.99837494, y: 1.9049416, z: -1.0475534}
-  - {x: 0.98475, y: 1.2351434, z: -1.2006172}
-  - {x: 0.971125, y: 0.6729957, z: -1.353681}
-  - {x: 0.9575, y: 0.25150013, z: -1.5067449}
-  - {x: 0.94387496, y: -0.017754436, z: -1.6598086}
-  - {x: 0.93025, y: -0.14635652, z: -1.8128724}
-  - {x: 0.916625, y: -0.16730809, z: -1.9659362}
-  - {x: 0.903, y: -0.12999979, z: -2.119}
+  - {x: 281.7945, y: -4.917, z: 45.312}
+  - {x: 282.40802, y: -6.4946413, z: 45.174}
+  - {x: 283.01898, y: -7.6800003, z: 45.203}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -34331,7 +34345,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
---- !u!114 &8498322091431798982
+--- !u!114 &3235125008441677400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34340,12 +34354,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7408035781754528258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9f6c46e88adc64181820ebf9519d12, type: 3}
+  m_Script: {fileID: 11500000, guid: 08dbb2222c8d5b24a9154f4d7935b978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   endPointTransform: {fileID: 5166428168348774955}
-  pointDensity: 3
-  sagAmplitude: 1
+  pointDensity: 1
+  sagAmplitude: 0.2
+  swayMultiplier: 0.1
+  swayXMultiplier: 1
+  swayYMultiplier: 0.5
+  swayFrequency: 0.2
 --- !u!1 &7429223043095266374
 GameObject:
   m_ObjectHideFlags: 0
@@ -40297,7 +40315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7908544516641403613}
   - component: {fileID: 7937500875951062334}
-  - component: {fileID: 3130791855749339025}
+  - component: {fileID: 1832026322285023483}
   m_Layer: 0
   m_Name: Chain Simple Start
   m_TagString: Untagged
@@ -40313,7 +40331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8584544449575309663}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.21030603, y: -0.71732664, z: 0.61771387, w: -0.24422006}
+  m_LocalRotation: {x: 0.21030647, y: 0.7173267, z: -0.6177134, w: 0.24422075}
   m_LocalPosition: {x: 0.000000059604645, y: 0.41000038, z: 0.47048956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40366,14 +40384,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 1.032, y: 2.6330004, z: 0.21551037}
-  - {x: 0.99585706, y: 1.8044022, z: 0.26243746}
-  - {x: 0.95971423, y: 1.0617402, z: 0.30936456}
-  - {x: 0.92357135, y: 0.4739294, z: 0.35629165}
-  - {x: 0.8874285, y: 0.07921493, z: 0.40321875}
-  - {x: 0.85128564, y: -0.12240279, z: 0.45014584}
-  - {x: 0.81514275, y: -0.16916937, z: 0.49707294}
-  - {x: 0.7789999, y: -0.13000003, z: 0.544}
+  - {x: 280.68448, y: -4.917, z: 45.332}
+  - {x: 280.356, y: -7.6800003, z: 45.079}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -40433,7 +40445,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
---- !u!114 &3130791855749339025
+--- !u!114 &1832026322285023483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40442,12 +40454,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8584544449575309663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9f6c46e88adc64181820ebf9519d12, type: 3}
+  m_Script: {fileID: 11500000, guid: 08dbb2222c8d5b24a9154f4d7935b978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   endPointTransform: {fileID: 7661341341652724379}
-  pointDensity: 3
-  sagAmplitude: 1
+  pointDensity: 1
+  sagAmplitude: 0.2
+  swayMultiplier: 0.1
+  swayXMultiplier: 1
+  swayYMultiplier: 0.5
+  swayFrequency: 0.2
 --- !u!1 &8603365389387573753
 GameObject:
   m_ObjectHideFlags: 0

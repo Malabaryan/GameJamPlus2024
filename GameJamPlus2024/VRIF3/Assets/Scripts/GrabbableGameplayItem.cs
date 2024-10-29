@@ -38,7 +38,7 @@ public class GrabbableGameplayItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.name);
+        //Debug.Log(other.transform.name);
         if (other.transform.CompareTag("GrabbableTP") && !grabbableRef.BeingHeld)
         {
             if(snapZone != null)
