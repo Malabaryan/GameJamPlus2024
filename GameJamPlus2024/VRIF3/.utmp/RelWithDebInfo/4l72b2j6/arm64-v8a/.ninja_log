@@ -1,10 +1,19 @@
 # ninja log v5
 40	1259	7511747272571116	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d46c807946642676
 21	1279	7511747272783896	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	ec05d3a2b0d60814
-14	1291	7511747272897644	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	6cf21fdb97840c12
-50	1325	7511747273220001	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bc87e782cf7686ec
 59	1401	7511747273981128	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	40cff292f10b62cb
+14	1291	7511747272897644	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	6cf21fdb97840c12
 7	1513	7511747275113135	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3c78dd7d9699c005
+50	1325	7511747273220001	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bc87e782cf7686ec
+1909	2074	7511747280695905	C:/Users/Malab/Documents/Github/Coffee-CR/GameJamPlus2024/GameJamPlus2024/VRIF3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4l72b2j6/obj/arm64-v8a/libgame.so	7d222cbea51a1f4d
 32	1741	7511747277381360	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	91f89bedbe371588
 0	1909	7511747278997546	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f80b2a12a6ee693c
-1909	2074	7511747280695905	C:/Users/Malab/Documents/Github/Coffee-CR/GameJamPlus2024/GameJamPlus2024/VRIF3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4l72b2j6/obj/arm64-v8a/libgame.so	7d222cbea51a1f4d
+28	845	7520186645222707	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d46c807946642676
+33	868	7520186645445082	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bc87e782cf7686ec
+10	876	7520186645536073	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	6cf21fdb97840c12
+15	919	7520186645952008	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	ec05d3a2b0d60814
+23	945	7520186646245644	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	40cff292f10b62cb
+5	977	7520186646597887	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3c78dd7d9699c005
+19	1104	7520186647858837	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	91f89bedbe371588
+1	1199	7520186648792381	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f80b2a12a6ee693c
+1199	1319	7520186650020225	C:/Users/Malab/Documents/Github/Coffee-CR/GameJamPlus2024/GameJamPlus2024/VRIF3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4l72b2j6/obj/arm64-v8a/libgame.so	7d222cbea51a1f4d
