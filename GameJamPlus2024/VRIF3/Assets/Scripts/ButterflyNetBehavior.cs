@@ -12,7 +12,7 @@ public class ButterflyNetBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
+        //Debug.Log(other.tag);
         if (other.transform.CompareTag("Seed"))
         {
             SeedBehavior seed = other.transform.GetComponent<SeedBehavior>();

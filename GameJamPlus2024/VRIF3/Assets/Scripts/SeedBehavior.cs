@@ -12,6 +12,7 @@ public class SeedBehavior : MonoBehaviour
     }
 
     public SeedType type;
+    [SerializeField] private GameObject flowerFrefab;
     [SerializeField] private float gravityScale = 0.01f;
     [SerializeField] private float heightOffset = 0.7f;
     [SerializeField] private float speedMultiplier = 1.5f;
