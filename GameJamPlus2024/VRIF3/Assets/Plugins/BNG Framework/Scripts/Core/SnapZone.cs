@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEditor;
 
 namespace BNG {
     public class SnapZone : MonoBehaviour {
@@ -139,7 +140,17 @@ namespace BNG {
             }
         }
 
-        void Update() {
+        public void OnValidate()
+        {
+            if (HeldItem != null)
+            {
+                HeldItem.transform.position = transform.position;
+                HeldItem.transform.rotation = transform.rotation;
+
+            }
+        }
+
+            void Update() {
 
             ClosestGrabbable = getClosestGrabbable();
 
@@ -528,4 +539,6 @@ namespace BNG {
             LastUnsnapTime = Time.time;
         }
     }
+
 }
+
