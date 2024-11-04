@@ -5727,7 +5727,7 @@ Transform:
   m_GameObject: {fileID: 5044590424453416393}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5786,7 +5786,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.5
+  m_Height: 1
   m_Radius: 0.1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -8496,7 +8496,6 @@ GameObject:
   - component: {fileID: 1453561745021325063}
   - component: {fileID: 511105688858485279}
   - component: {fileID: 8645325238600784752}
-  - component: {fileID: -5676645154364371230}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -8632,20 +8631,6 @@ MonoBehaviour:
   FadeInSpeed: 6
   FadeOutSpeed: 6
   SceneFadeInDelay: 1
---- !u!114 &-5676645154364371230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012736044687851362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
 --- !u!1 &8095671163994558355
 GameObject:
   m_ObjectHideFlags: 0
