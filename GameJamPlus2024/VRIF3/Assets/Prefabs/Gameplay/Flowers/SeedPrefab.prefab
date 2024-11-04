@@ -5755,6 +5755,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  grabbableFlowerPrefab: {fileID: 3133865031535736319, guid: aa520dbba1be549478d812c01e5d5592,
+    type: 3}
+  flowerMesh: {fileID: 8584259698544216169, guid: 096254e8d4758c14b81f0f3114440534,
+    type: 3}
   gravityScale: 0.01
   heightOffset: 0.7
   speedMultiplier: 1.5
@@ -5762,3 +5766,4 @@ MonoBehaviour:
   lifetime: 180
   minHeight: -9
   particles: {fileID: 7829683462261444009}
+  isGrabbedByNet: 0

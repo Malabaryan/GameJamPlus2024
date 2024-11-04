@@ -12,7 +12,8 @@ public class SeedBehavior : MonoBehaviour
     }
 
     public SeedType type;
-    [SerializeField] private GameObject flowerFrefab;
+    public GameObject grabbableFlowerPrefab;
+    public Mesh flowerMesh;
     [SerializeField] private float gravityScale = 0.01f;
     [SerializeField] private float heightOffset = 0.7f;
     [SerializeField] private float speedMultiplier = 1.5f;
@@ -23,7 +24,7 @@ public class SeedBehavior : MonoBehaviour
 
 
     private Grabbable grabbableRef;
-    public bool isGrabbedByNet = false;
+    [HideInInspector] public bool isGrabbedByNet = false;
     private Rigidbody _rb;
     private float gravityMultiplier;
     private float currentLifetime = 0f;
