@@ -1,3 +1,4 @@
+using BNG;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,7 +7,7 @@ public class ShipAnchor : MonoBehaviour
 {
     public UnityEvent AnchorTrigger;
     public float TriggerHeight;
-
+    public SnapZone SnapZone;
     private bool hasTriggered;
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -33,6 +34,7 @@ public class ShipAnchor : MonoBehaviour
         hasTriggered = false;
         transform.localPosition = startPosition;
         transform.rotation = startRotation;
+        SnapZone.GrabGrabbable(this.GetComponent<Grabbable>());
 
     }
 }
