@@ -1,21 +1,26 @@
 ﻿using BNG;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour {
 
+
     [Header("Engine Properties")]
     public float MotorTorque = 500f;
     public float MaxSpeed = 30f;
-    public ShipPump EnginePump;
     public float MaxSteeringAngle = 45f;
     public float AnchorBreakWeight = 400;
+    public float SpeedModifier = 1f;
     [Header("Steering Grabbable")]
     [Tooltip("If true and SteeringGrabbable is being held, the right / left trigger will act as input for acceleration / defceleration.")]
     public bool CheckTriggerInput = true;
     public Grabbable SteeringGrabbable;
+    [Header("Gas Properties")]
+    public float GasComsuption = 1;
+    public ShipPump EnginePump;
 
     [Header("Engine Status")]
     [Tooltip("Is the Engine on and ready for input. If false, engine will need to be started first.")]
@@ -163,8 +168,12 @@ public class ShipController : MonoBehaviour {
 
         // Update speedometer
         CurrentSpeed = correctValue(rb.linearVelocity.magnitude * 3.6f);
-
-        UpdateWheelTorque();
+        if(EnginePump.CurrentValue > 0)
+        {
+            UpdateWheelTorque();
+            if (CurrentSpeed != 0 && EnginePump.CurrentValue > 0)
+                EnginePump.CurrentValue -= GasComsuption * Time.fixedDeltaTime;
+        }
     }
 
     public virtual void UpdateWheelTorque() {
@@ -173,8 +182,8 @@ public class ShipController : MonoBehaviour {
 
         Quaternion turnRotation = Quaternion.Euler(0f, MaxSteeringAngle * SteeringAngle, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
-        rb.AddForce(transform.forward * MotorTorque * (float)EnginePump.CurrentValue);
-        
+        rb.AddForce(transform.forward * MotorTorque * SpeedModifier);
+
     }
 
     public virtual void SetSteeringAngle(float steeringAngle) {
