@@ -7,7 +7,7 @@ public class PotBehavior : MonoBehaviour
     [SerializeField] GameObject flower;
     public Mesh testingMesh;
     [SerializeField] MeshFilter potFlowerMesh;
-    //[SerializeField] SeedBehavior.SeedType desiredSeed;
+    [SerializeField] SeedBehavior.SeedType desiredSeed;
     [SerializeField] GameObject flowerVisuals;
     //[SerializeField] GameObject[] flowerVisuals;
     [SerializeField] GameObject grabbableFlower;
@@ -35,8 +35,7 @@ public class PotBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.transform.CompareTag("Seed") && other.GetComponent<SeedBehavior>().type == desiredSeed) 
-        if (other.transform.CompareTag("Seed"))
+        if (other.transform.CompareTag("Seed") && (other.GetComponent<SeedBehavior>().type == desiredSeed || desiredSeed == SeedBehavior.SeedType.None))
         {
             //Debug.Log("Planted Seed");
             hasBeenPlanted = true;

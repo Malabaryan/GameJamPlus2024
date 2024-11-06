@@ -576,21 +576,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6177678277204053546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a2b22e4628e5f94196d103fb483d59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turnipIndicator: {fileID: 6814755489967012250}
   flower: {fileID: 4254613230497282357}
+  testingMesh: {fileID: 0}
+  potFlowerMesh: {fileID: 0}
   desiredSeed: 0
-  flowerVisuals:
-  - {fileID: 4578018791920957957}
-  - {fileID: 2774697292699230594}
-  - {fileID: 6420109238998245893}
+  flowerVisuals: {fileID: 0}
   grabbableFlower: {fileID: 4803586152871824020}
-  grabbableCala: {fileID: 8975813835960643464}
-  grabbableHeliconia: {fileID: 6827588777875079884}
+  spawnCooldown: 10
+  flowerPrefab: {fileID: 0}
 --- !u!1 &6420109238998245893
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,12 +878,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2552262774065148057}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6827588777875079884 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9055334403653972565, guid: 5028e39343db1414aa9d82e52ac4f04b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2552262774065148057}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5932236673351763147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1166,12 +1159,6 @@ PrefabInstance:
 --- !u!4 &7080020430403452877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1715842707738167904, guid: 3be12f830f4ebce4782c5e8a49629304,
-    type: 3}
-  m_PrefabInstance: {fileID: 8470897940927952301}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8975813835960643464 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 657195603387832869, guid: 3be12f830f4ebce4782c5e8a49629304,
     type: 3}
   m_PrefabInstance: {fileID: 8470897940927952301}
   m_PrefabAsset: {fileID: 0}

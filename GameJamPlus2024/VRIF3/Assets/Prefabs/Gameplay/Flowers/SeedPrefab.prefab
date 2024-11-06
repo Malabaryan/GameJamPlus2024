@@ -5754,7 +5754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a33a1737de090c4b8f3b6d052d665e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   grabbableFlowerPrefab: {fileID: 3133865031535736319, guid: aa520dbba1be549478d812c01e5d5592,
     type: 3}
   flowerMesh: {fileID: 8584259698544216169, guid: 096254e8d4758c14b81f0f3114440534,

@@ -6,6 +6,7 @@ public class SeedBehavior : MonoBehaviour
 {
     public enum SeedType
     {
+        None,
         Flower,
         Heliconia,
         Cala
