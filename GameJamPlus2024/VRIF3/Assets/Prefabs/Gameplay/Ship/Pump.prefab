@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4468594978820800131}
   - component: {fileID: 1756498100035338860}
   - component: {fileID: 2871058575468738754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093771588793796693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bellows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 1215561887636333976}
   - component: {fileID: 1215561887636333981}
   - component: {fileID: 1215561887636333982}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,9 +312,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1215561888898981966}
-  MaxValue: 1
+  MaxValue: 60
   MinValue: 0
-  AddAmount: 0.1
+  AddAmount: 1
   DecayValue: 0.01
   CurrentValue: 0
 --- !u!65 &1215561887636333976
@@ -601,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215561888680941597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HingeOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,8 +826,8 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -11.785381
-    max: 27.865494
+    min: -77.346344
+    max: 102.79233
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
   InitialXRotation: -10.347485
   SwitchOnSound: {fileID: 8300000, guid: 96a66c8233acdff40a72e102fc819781, type: 3}
   SwitchOffSound: {fileID: 8300000, guid: 5602338fc0b4a3149a1b5bb57217426f, type: 3}
-  SwitchTolerance: 1.25
+  SwitchTolerance: 50
   UseSmoothLook: 1
   SmoothLookSpeed: 15
   AllowPhysicsForces: 1
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 4271580633072298332}
   - component: {fileID: 4271580633072298322}
   - component: {fileID: 4271580633072298333}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 7248702730900889586}
   - component: {fileID: 2768457686148592235}
   - component: {fileID: 8346092460703892274}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

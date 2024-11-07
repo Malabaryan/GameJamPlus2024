@@ -13,7 +13,7 @@ public class ShipController : MonoBehaviour {
     public float MaxSpeed = 30f;
     public float MaxSteeringAngle = 45f;
     public float AnchorBreakWeight = 400;
-    public float SpeedModifier = 1f;
+    public float DeadZoneThreshold = 0.02f;
     [Header("Steering Grabbable")]
     [Tooltip("If true and SteeringGrabbable is being held, the right / left trigger will act as input for acceleration / defceleration.")]
     public bool CheckTriggerInput = true;
@@ -21,7 +21,7 @@ public class ShipController : MonoBehaviour {
     [Header("Gas Properties")]
     public float GasComsuption = 1;
     public ShipPump EnginePump;
-
+    public Lever SpeedController;
     [Header("Engine Status")]
     [Tooltip("Is the Engine on and ready for input. If false, engine will need to be started first.")]
     public bool EngineOn = false;
@@ -176,13 +176,23 @@ public class ShipController : MonoBehaviour {
         }
     }
 
+
     public virtual void UpdateWheelTorque() {
         float torqueInput = EngineOn ? MotorInput : 0;
         Vector3 rotation = new Vector3(MaxSteeringAngle * SteeringAngle, 0f, 0f);
 
         Quaternion turnRotation = Quaternion.Euler(0f, MaxSteeringAngle * SteeringAngle, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
-        rb.AddForce(transform.forward * MotorTorque * SpeedModifier);
+        float speed  = Mathf.Clamp(SpeedController.LeverPercentage, 1f, 100f);
+
+        // Map percentage (1 to 100) to the range -1 to 1
+        float normalizedValue = (speed - 1) / 99f * 2 - 1;
+
+        if (Mathf.Abs(normalizedValue) < DeadZoneThreshold)
+        {
+            normalizedValue = 0f;
+        }
+        rb.AddForce(transform.forward * MotorTorque * normalizedValue);
 
     }
 
