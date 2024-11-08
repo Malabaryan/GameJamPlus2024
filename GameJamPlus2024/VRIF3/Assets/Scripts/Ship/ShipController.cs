@@ -60,6 +60,21 @@ public class ShipController : MonoBehaviour {
     bool wasHoldingSteering, isHoldingSteering;
 
     public Transform DriverSeatTransform;
+    private List<Collision> activeCollisions = new List<Collision>();
+
+
+    void OnCollisionStay(Collision collision)
+    {
+        // Update information if needed
+        Debug.Log("Collision Staying with: " + collision.gameObject.name);
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        // Remove collision when it ends
+        activeCollisions.Remove(collision);
+        Debug.Log("Collision Exited with: " + collision.gameObject.name);
+    }
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -240,6 +255,9 @@ public class ShipController : MonoBehaviour {
         if(colVelocity > 0.1f) {
             VRUtils.Instance.PlaySpatialClipAt(CollisionSound, collision.GetContact(0).point, 1f);
         }
+        // Add the new collision to the list
+        activeCollisions.Add(collision);
+        Debug.Log("Collision Entered with: " + collision.gameObject.name);
     }
 
     float correctValue(float inputValue) {
