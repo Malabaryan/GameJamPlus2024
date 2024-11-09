@@ -967,11 +967,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b9a237349493c4ba449ee953f41834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinimumXRotation: -11.785381
-  MaximumXRotation: 27.865494
+  MinimumXRotation: -77.346344
+  MaximumXRotation: 102.79233
   InitialXRotation: -10.347485
-  SwitchOnSound: {fileID: 8300000, guid: 96a66c8233acdff40a72e102fc819781, type: 3}
-  SwitchOffSound: {fileID: 8300000, guid: 5602338fc0b4a3149a1b5bb57217426f, type: 3}
+  SwitchOnSound: {fileID: 8300000, guid: 90b8615c9ab8f47419bca95248542612, type: 3}
+  SwitchOffSound: {fileID: 8300000, guid: ab99165490cb61b48b5f96391ff955ce, type: 3}
   SwitchTolerance: 50
   UseSmoothLook: 1
   SmoothLookSpeed: 15

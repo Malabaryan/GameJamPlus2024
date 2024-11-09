@@ -919,6 +919,8 @@ MonoBehaviour:
   onMin:
     m_PersistentCalls:
       m_Calls: []
+  wheelReturning: {fileID: 0}
+  wheelGrabbed: {fileID: 0}
   ShowEditorGizmos: 1
 --- !u!1 &1562273905646893587
 GameObject:

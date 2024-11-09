@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -53,9 +54,15 @@ namespace BNG
         [Tooltip("Called every frame. Returns the current current rotation between -1, 1")]
         public UnityEvent onMin;
 
+        public AudioClip wheelReturning;
+        public AudioClip wheelGrabbed;
+        
+
         [Header("Editor Option")]
         [Tooltip("If true will show an angle helper in editor mode (Gizmos must be enabled)")]
         public bool ShowEditorGizmos = true;
+
+        
 
         /// <summary>
         /// Returns the angle of the rotation, taking RotationSpeed into account
@@ -127,14 +134,23 @@ namespace BNG
 
         private float returnCountdown = 0;
         private bool countdownStarted = false;
+        private AudioSource audioSource;
+
         /// <summary>
         /// This angle is smoothed towards target angle in Update using RotationSpeed
         /// </summary>
         protected float smoothedAngle;
 
+        public enum AudioStates
+        {
+            wheelReturning = 0,
+            wheelGrabbed = 1
+        }
+
         private void Start()
         {
             returnCountdown = ReturnDelay;
+            audioSource = this.GetComponent<AudioSource>();
         }
         void Update()
         {
@@ -294,10 +310,26 @@ namespace BNG
                 // Discard the Z value
                 previousPrimaryPosition = new Vector3(previousPrimaryPosition.x, previousPrimaryPosition.y, 0);
             }
+
+            //Play sound
+            PlaySound(AudioStates.wheelGrabbed);
+        }
+
+        public void PlaySound(AudioStates state)
+        {
+            if (state == AudioStates.wheelGrabbed)
+            {
+                audioSource.PlayOneShot(wheelGrabbed);
+            }
+            else if (state == AudioStates.wheelReturning)
+            {
+                audioSource.PlayOneShot(wheelReturning);
+            }
         }
 
         public virtual void ReturnToCenterAngle()
         {
+            
             float target = 0;
             if (ReturnToTarget)
             {
@@ -331,6 +363,9 @@ namespace BNG
                 returnCountdown = ReturnDelay;
 
             }
+
+            //Play sound
+            PlaySound(AudioStates.wheelReturning);
 
             // Set the target angle to our newly calculated angle
             targetAngle = smoothedAngle;
