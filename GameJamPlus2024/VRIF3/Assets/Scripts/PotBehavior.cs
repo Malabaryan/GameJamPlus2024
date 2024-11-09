@@ -5,7 +5,6 @@ public class PotBehavior : MonoBehaviour
 {
     [SerializeField] GameObject turnipIndicator;
     [SerializeField] GameObject flower;
-    public Mesh testingMesh;
     [SerializeField] MeshFilter potFlowerMesh;
     [SerializeField] SeedBehavior.SeedType desiredSeed;
     [SerializeField] GameObject flowerVisuals;
@@ -20,11 +19,6 @@ public class PotBehavior : MonoBehaviour
     [SerializeField] private GameObject flowerPrefab;
 
     private float currentCooldown = 0f;
-
-    private void Start()
-    {
-        potFlowerMesh.mesh = testingMesh;
-    }
 
     private void Update()
     {
