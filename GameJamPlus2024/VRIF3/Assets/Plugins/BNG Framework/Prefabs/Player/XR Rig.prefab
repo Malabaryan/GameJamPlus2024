@@ -2938,7 +2938,6 @@ GameObject:
   - component: {fileID: 5883667856961496371}
   - component: {fileID: 5117709272727730634}
   - component: {fileID: 6971661041198115719}
-  - component: {fileID: -2301571558321702773}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -3074,20 +3073,6 @@ MonoBehaviour:
   FadeInSpeed: 6
   FadeOutSpeed: 6
   SceneFadeInDelay: 1
---- !u!114 &-2301571558321702773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5117709272727730633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
 --- !u!1 &5117709272727892639
 GameObject:
   m_ObjectHideFlags: 0
@@ -4902,7 +4887,7 @@ MonoBehaviour:
   CenterEyeAnchor: {fileID: 5117709272728151529}
   GroundedLayers:
     serializedVersion: 2
-    m_Bits: 257
+    m_Bits: 64
   DistanceFromGround: 0
   DistanceFromGroundOffset: 0
   MinimumCapsuleHeight: 0.4
@@ -4929,7 +4914,7 @@ CharacterController:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8119
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
@@ -5033,7 +5018,7 @@ MonoBehaviour:
   SegmentScale: 0.01
   CollisionLayers:
     serializedVersion: 2
-    m_Bits: 259
+    m_Bits: 64
   ValidLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -5098,7 +5083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroundedLayers:
     serializedVersion: 2
-    m_Bits: 1025
+    m_Bits: 64
   DistanceFromGround: 0
   CurrentPlatform: {fileID: 0}
 --- !u!1001 &1444123692909412719
