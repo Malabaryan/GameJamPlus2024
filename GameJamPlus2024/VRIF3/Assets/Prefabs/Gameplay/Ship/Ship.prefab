@@ -3279,7 +3279,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 43.351997}
-  - {x: 282.3851, y: -6.5081534, z: 43.34197}
+  - {x: 282.43027, y: -6.488471, z: 43.257954}
   - {x: 283.019, y: -7.6800003, z: 43.363}
   m_Parameters:
     serializedVersion: 3
@@ -10847,7 +10847,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 45.312}
-  - {x: 282.3837, y: -6.508185, z: 45.244156}
+  - {x: 282.4204, y: -6.488438, z: 45.156136}
   - {x: 283.019, y: -7.6800003, z: 45.203}
   m_Parameters:
     serializedVersion: 3
@@ -13364,7 +13364,7 @@ PrefabInstance:
     - target: {fileID: 966512732591709781, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
       propertyPath: EmulatorEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1144915590546846139, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
@@ -14661,9 +14661,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
+      propertyPath: onValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
+        type: 3}
       propertyPath: onValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 208616809433561908}
+    - target: {fileID: 6220532105502890128, guid: df8b1387e92f4674bad5f5f8cca87856,
+        type: 3}
+      propertyPath: onValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSteeringAngleInverted
+      objectReference: {fileID: 0}
     - target: {fileID: 6696667613760440677, guid: df8b1387e92f4674bad5f5f8cca87856,
         type: 3}
       propertyPath: m_Layer
