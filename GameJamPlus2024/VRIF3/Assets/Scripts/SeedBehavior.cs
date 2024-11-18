@@ -9,7 +9,8 @@ public class SeedBehavior : MonoBehaviour
         None,
         Flower,
         Heliconia,
-        Cala
+        Cala,
+        Spore
     }
 
     public SeedType type;

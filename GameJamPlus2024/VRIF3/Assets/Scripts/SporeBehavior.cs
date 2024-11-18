@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SporeBehavior : MonoBehaviour
 {
-    [SerializeField] private float suctionSpeedMultiplier;
+    [SerializeField] private float suctionSpeedMultiplier = 10f;
     [SerializeField] private float maxSpeed = 0.3f;
     public Transform suctionPoint;
     public bool isBeingSucked;
