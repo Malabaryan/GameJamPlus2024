@@ -12,6 +12,10 @@ public class EmulatorMode : MonoBehaviour
     {
         VREmulator = GetComponent<VREmulator>();
         modeSwitch = VREmulator.HMDIsActive;
+        if (!VREmulator.HMDIsActive)
+        {
+            EmulatorStartEvents.Invoke();
+        }
     }
 
     // Update is called once per frame
