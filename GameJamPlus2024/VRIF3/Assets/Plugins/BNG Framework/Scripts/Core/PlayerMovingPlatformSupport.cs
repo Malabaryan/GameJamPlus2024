@@ -13,7 +13,7 @@ namespace BNG {
 
         // The object currently below us
         protected RaycastHit groundHit;
-
+        bool FixedOnPlataform = true;
         // Use smooth movement if available
         SmoothLocomotion smoothLocomotion;
 
@@ -54,10 +54,11 @@ namespace BNG {
         public virtual void CheckMovingPlatform() {
             bool onMovingPlatform = false;
 
-            if (groundHit.collider != null && DistanceFromGround < 0.01f) {
-                UpdateCurrentPlatform();
+            if (groundHit.collider != null && DistanceFromGround < 0.01f || FixedOnPlataform) {
+                if(!FixedOnPlataform)
+                    UpdateCurrentPlatform();
 
-                if (CurrentPlatform) {
+                if (CurrentPlatform || FixedOnPlataform) {
                     onMovingPlatform = true;
 
                     // This is another potential method of moving the character instead of parenting it
@@ -76,10 +77,10 @@ namespace BNG {
                         }
                     }
 
-                    // For now we can parent the characterController object to move it along. Rigidbodies may want to change friction materials or alter the player's velocity
+                     // For now we can parent the characterController object to move it along. Rigidbodies may want to change friction materials or alter the player's velocity
                     if (CurrentPlatform.MovementMethod == MovingPlatformMethod.ParentToPlatform) {
                         if(characterController != null) {
-                            if (onMovingPlatform) {
+                            if (onMovingPlatform || FixedOnPlataform) {
                                 characterController.transform.parent = groundHit.collider.transform;
                                 requiresReparent = true;
                             }
