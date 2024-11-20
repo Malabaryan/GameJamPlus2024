@@ -3966,6 +3966,7 @@ GameObject:
   - component: {fileID: 5117709272763234211}
   - component: {fileID: 1247141269419349799}
   - component: {fileID: 1247141269419349802}
+  - component: {fileID: 3051499558096461532}
   - component: {fileID: 966512732591709781}
   m_Layer: 9
   m_Name: XR Rig
@@ -4085,6 +4086,33 @@ MonoBehaviour:
   ErrTextColor: {r: 1, g: 0, b: 0, a: 1}
   DebugTextHolder: {fileID: 1560750983781429978}
   LastDebugMsg: 
+--- !u!114 &3051499558096461532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117709272763234209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604c1fb87e2e476448aa6035b280d060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EmulatorStartEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8622308822696291321}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &966512732591709781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6297,7 +6325,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9166498488684277474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57ed093aba1f3dc40b680242d0f0e734, type: 3}
   m_Name: 

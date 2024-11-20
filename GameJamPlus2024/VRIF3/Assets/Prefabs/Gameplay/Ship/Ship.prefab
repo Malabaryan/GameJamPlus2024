@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb5dba1f53910643be3ea0d68734b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementMethod: 0
+  MovementMethod: 1
   PositionDelta: {x: 0, y: 0, z: 0}
   RotationDelta: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &5579139814915714408
@@ -3078,7 +3078,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 43.351997}
-  - {x: 282.38425, y: -6.508427, z: 43.3673}
+  - {x: 282.42017, y: -6.492896, z: 43.26949}
   - {x: 283.019, y: -7.6800003, z: 43.363}
   m_Parameters:
     serializedVersion: 3
@@ -9996,7 +9996,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 281.7945, y: -4.917, z: 45.312}
-  - {x: 282.3853, y: -6.5084596, z: 45.269447}
+  - {x: 282.4115, y: -6.4928775, z: 45.168602}
   - {x: 283.019, y: -7.6800003, z: 45.203}
   m_Parameters:
     serializedVersion: 3
@@ -12095,6 +12095,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1479486906565842700}
     m_Modifications:
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5312869084140949367}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051499558096461532, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: EmulatorStartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4749516825554307633, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12185,6 +12225,11 @@ PrefabInstance:
       propertyPath: StartingItem
       value: 
       objectReference: {fileID: 6118744621936216525}
+    - target: {fileID: 8622308822696291321, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8622308822696291321, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
       propertyPath: CurrentPlatform
