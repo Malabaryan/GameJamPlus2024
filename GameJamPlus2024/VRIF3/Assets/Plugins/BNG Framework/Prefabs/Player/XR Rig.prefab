@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 8663465419562943920}
   m_Layer: 9
   m_Name: Inventory
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 1247141267538704527}
   m_Layer: 9
   m_Name: Locomotion
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3679,7 +3679,7 @@ GameObject:
   - component: {fileID: 5117709272728151533}
   m_Layer: 9
   m_Name: CameraRig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3714,6 +3714,7 @@ GameObject:
   - component: {fileID: 5117709272727730634}
   - component: {fileID: 6971661041198115719}
   - component: {fileID: 4122860526525965434}
+  - component: {fileID: 8548267720740150662}
   m_Layer: 9
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -3813,7 +3814,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &5117709272727730634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3857,6 +3858,27 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5117709272727730633}
   m_Enabled: 1
+--- !u!135 &8548267720740150662
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117709272727730633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5117709272727892639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,7 +3922,7 @@ GameObject:
   - component: {fileID: 5117709272728089495}
   m_Layer: 9
   m_Name: TrackingSpace
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3970,7 +3992,7 @@ GameObject:
   - component: {fileID: 966512732591709781}
   m_Layer: 9
   m_Name: XR Rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4098,21 +4120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604c1fb87e2e476448aa6035b280d060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmulatorStartEvents:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8622308822696291321}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  PlayerMovingPlatformSupport: {fileID: 8622308822696291321}
 --- !u!114 &966512732591709781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6466,7 +6474,7 @@ PrefabInstance:
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.002
+      value: 0.0019999985
       objectReference: {fileID: 0}
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
@@ -6476,12 +6484,12 @@ PrefabInstance:
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.13599999
+      value: -0.136
       objectReference: {fileID: 0}
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
@@ -6491,7 +6499,7 @@ PrefabInstance:
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 5314383267410869544, guid: 44f930910e1bb2649aa609f1f097c33d,
         type: 3}
