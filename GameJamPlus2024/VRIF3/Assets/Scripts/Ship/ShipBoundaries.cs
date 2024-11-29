@@ -2,14 +2,21 @@ using UnityEngine;
 
 public class ShipBoundaries : MonoBehaviour
 {
-
+    public BoundsWarning BoundsWarning;
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "MainCamera")
         {
-            Debug.Log("Get inside the zone");
+            BoundsWarning.DoFadeIn();
 
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "MainCamera")
+        {
+            BoundsWarning.DoFadeOut();
 
+        }
+    }
 }
