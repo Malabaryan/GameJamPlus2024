@@ -14,6 +14,7 @@ public class CompassBehavior : MonoBehaviour
     {
         //North have to be always the same, unparent to read its angles permanently
         northTransfrom.SetParent(null);
+        northTransfrom.GetChild(0).gameObject.SetActive(false);
     }
 
     void FixedUpdate()
