@@ -3,6 +3,7 @@ using BNG;
 
 public class FlowerBehavior : MonoBehaviour
 {
+    public SeedBehavior.SeedType flowerType = SeedBehavior.SeedType.None;
     [SerializeField] Vector3 desiredRotation = Vector3.zero;
     private Rigidbody _rb;
     private Grabbable grabbableRef;
