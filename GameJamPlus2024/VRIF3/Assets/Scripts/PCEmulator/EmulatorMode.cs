@@ -5,8 +5,10 @@ using UnityEngine.Events;
 public class EmulatorMode : MonoBehaviour
 {
     public PlayerMovingPlatformSupport PlayerMovingPlatformSupport;
+    public BowEmulator BowEmulator;
 
     private VREmulator VREmulator;
+
     private bool modeSwitch;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +24,7 @@ public class EmulatorMode : MonoBehaviour
         if (VREmulator.HMDIsActive != modeSwitch)
         {
             PlayerMovingPlatformSupport.enabled = !VREmulator.HMDIsActive;
-
+            BowEmulator.Active = !VREmulator.HMDIsActive;
 
             modeSwitch = VREmulator.HMDIsActive;
 
