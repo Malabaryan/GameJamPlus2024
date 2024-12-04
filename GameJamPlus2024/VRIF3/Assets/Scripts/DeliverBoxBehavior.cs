@@ -3,15 +3,21 @@ using UnityEngine;
 
 public class DeliverBoxBehavior : MonoBehaviour
 {
+    [Header("Deliver Box Properties")]
     [SerializeField] private SnapZone bouquetSlot;
     [SerializeField] SeedBehavior.SeedType desiredFlower;
     [SerializeField] private Transform lidTransform;
+
+    [Header("Deliver Button Materials")]
+    [SerializeField] private GameObject buttonMesh;
+    [SerializeField] private Material wrongMaterial;
+    [SerializeField] private Material correctMaterial;
 
     private bool lidClosed = false;
 
     void Start()
     {
-        
+        buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
     }
 
     void Update()
@@ -30,10 +36,12 @@ public class DeliverBoxBehavior : MonoBehaviour
             if (desiredFlower == bouquetSlot.HeldItem.transform.GetComponent<BouqueteBehavior>().flowerType)
             {
                 Debug.Log("FLOR DESEADA");
+                buttonMesh.GetComponent<MeshRenderer>().material = correctMaterial;
             }
             else
             {
                 Debug.Log("FLOR NO DESEADA");
+                buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
             }
         }
     }

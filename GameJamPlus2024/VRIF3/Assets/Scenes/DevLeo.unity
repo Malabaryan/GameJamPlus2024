@@ -527,6 +527,9 @@ MonoBehaviour:
   bouquetSlot: {fileID: 1017564842800610983}
   desiredFlower: 1
   lidTransform: {fileID: 1796157322}
+  buttonMesh: {fileID: 1584385806}
+  wrongMaterial: {fileID: 2100000, guid: 7bce7998f969cfb43874ced39c0982ae, type: 2}
+  correctMaterial: {fileID: 2100000, guid: ce513b694add8de458288981be0e10ef, type: 2}
 --- !u!54 &97372969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2872,6 +2875,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
         type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b88ed8160d94d47ec8631c273a6df62f,
+        type: 3}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
@@ -2884,6 +2893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4088779762850046597, guid: 1f75a4a1ec4271442a6c51de842cadf0, type: 3}
@@ -4251,7 +4265,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb4f63a1c24846549b212d7c7f64a784, type: 2}
+  - {fileID: 2100000, guid: 7bce7998f969cfb43874ced39c0982ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5305,7 +5319,7 @@ Transform:
   m_GameObject: {fileID: 1796157321}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9063079, y: 0, z: 0, w: 0.42261827}
-  m_LocalPosition: {x: 0, y: 0.152, z: 0.20000005}
+  m_LocalPosition: {x: 0, y: 0.149, z: 0.20000005}
   m_LocalScale: {x: 0.4, y: 0.00040000002, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5585,7 +5599,7 @@ Transform:
   m_GameObject: {fileID: 1939880981}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5000001}
+  m_LocalPosition: {x: -0.0009998679, y: -4, z: -0.5000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8508,7 +8522,7 @@ MonoBehaviour:
   AutoSnapItem: 0
   CanDropItem: 1
   CanRemoveItem: 1
-  ScaleItem: 0.5
+  ScaleItem: 0.7
   DisableColliders: 1
   ParentObjectToSnapZone: 1
   DuplicateItemOnGrab: 0
@@ -16506,6 +16520,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749516825554307633, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.002000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749516825554307633, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749516825554307633, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749516825554307633, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071067
       objectReference: {fileID: 0}
     - target: {fileID: 4912681567078200510, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
