@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - DR_ENABLE_LIGHTMAP_DIR
   - _ALPHATEST_ON
   - _CELPRIMARYMODE_SINGLE
   - _DETAILMAPBLENDINGMODE_MULTIPLY
@@ -95,7 +96,7 @@ Material:
     - _CelNumSteps: 3
     - _CelPrimaryMode: 1
     - _Cull: 2
-    - _Cutoff: 0
+    - _Cutoff: 1
     - _DetailMapBlendingMode: 0
     - _DetailMapImpact: 0
     - _DetailNormalMapScale: 1

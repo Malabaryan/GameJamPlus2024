@@ -27,16 +27,16 @@ Material:
   m_ValidKeywords:
   - _COLORMODE_LINEAR
   - _FOAMMODE_GRADIENT_NOISE
-  - _WAVEMODE_ROUND
+  - _WAVEMODE_GRID
   m_InvalidKeywords:
   - _ALLOWALPHAOVERFLOW_OFF
   - _OPAQUE_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -90,7 +90,7 @@ Material:
     - _CameraDistanceFadeFar: 10
     - _ColorMode: 0
     - _CrestSharpness: 1
-    - _CrestSize: 0.251
+    - _CrestSize: 0.853
     - _Cull: 2
     - _Cutoff: 0.5
     - _Depth: 100
@@ -139,19 +139,19 @@ Material:
     - _UvFadeY: 0.1
     - _WaterClearness: 0
     - _WaterDepth: 9.54
-    - _WaveAmplitude: 17.95
+    - _WaveAmplitude: 4.3
     - _WaveDirection: 0
-    - _WaveFrequency: 11.06
-    - _WaveMode: 1
-    - _WaveNoise: 0.462
-    - _WaveSpeed: 0.5
+    - _WaveFrequency: 25
+    - _WaveMode: 2
+    - _WaveNoise: 0.01
+    - _WaveSpeed: 0.05
     - _WorkflowMode: 1
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 1, b: 0.7287984, a: 1}
-    - _ColorDeep: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorShallow: {r: 0.8037735, g: 0.8037735, b: 0.8037735, a: 1}
+    - _ColorDeep: {r: 0.90188676, g: 0.90188676, b: 0.90188676, a: 1}
+    - _ColorShallow: {r: 0.3660378, g: 0.3660378, b: 0.3660378, a: 1}
     - _ColorTop: {r: 1, g: 1, b: 1, a: 0.34117648}
     - _CrestColor: {r: 1, g: 1, b: 1, a: 0.9}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
