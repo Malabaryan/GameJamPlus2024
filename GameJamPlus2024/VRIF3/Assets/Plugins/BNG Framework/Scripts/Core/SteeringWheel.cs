@@ -312,7 +312,7 @@ namespace BNG
             }
 
             //Play sound
-            PlaySound(AudioStates.wheelGrabbed);
+            //PlaySound(AudioStates.wheelGrabbed);
         }
 
         public void PlaySound(AudioStates state)
@@ -365,7 +365,7 @@ namespace BNG
             }
 
             //Play sound
-            PlaySound(AudioStates.wheelReturning);
+            //PlaySound(AudioStates.wheelReturning);
 
             // Set the target angle to our newly calculated angle
             targetAngle = smoothedAngle;
