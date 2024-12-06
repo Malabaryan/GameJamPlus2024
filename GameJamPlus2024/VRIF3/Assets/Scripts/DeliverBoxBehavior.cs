@@ -22,7 +22,8 @@ public class DeliverBoxBehavior : MonoBehaviour
     public AudioClip placedCorrectFlower; //Might want to change this with the mission manager later.
     [SerializeField] private AudioClip placedWrongFlower;
     [SerializeField] private AudioClip notCloseToDeliverPoint;
-    [SerializeField] private AudioClip triedToDeliverWrongFlower; //Should be good to have some angry grandma noises.
+    [SerializeField] private AudioClip teleportSFX;
+    public AudioClip triedToDeliverWrongFlower; //Should be good to have some angry grandma noises.
     public AudioClip succesfulDeliver; //Might want to add grandma multiple audio options for this.
     private bool lidClosed = false;
     private bool correctFlower = false;
@@ -84,6 +85,7 @@ public class DeliverBoxBehavior : MonoBehaviour
             deliverVisualsTransform.gameObject.SetActive(true);
             shootingDelivery = true;
             correctFlower = false;
+            AudioSource.PlayClipAtPoint(teleportSFX, transform.position);
         }
     }
 

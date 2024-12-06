@@ -537,8 +537,9 @@ MonoBehaviour:
   placedCorrectFlower: {fileID: 0}
   placedWrongFlower: {fileID: 0}
   notCloseToDeliverPoint: {fileID: 0}
+  teleportSFX: {fileID: 8300000, guid: 7535f23396193f044a99f214707879d7, type: 3}
   triedToDeliverWrongFlower: {fileID: 0}
-  succesfulDeliver: {fileID: 0}
+  succesfulDeliver: {fileID: 8300000, guid: 7535f23396193f044a99f214707879d7, type: 3}
 --- !u!54 &97372969
 Rigidbody:
   m_ObjectHideFlags: 0
