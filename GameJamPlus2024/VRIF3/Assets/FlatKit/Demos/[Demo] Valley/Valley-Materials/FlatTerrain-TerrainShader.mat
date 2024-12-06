@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - DR_ENABLE_LIGHTMAP_DIR
   - DR_GRADIENT_ON
   - _CELPRIMARYMODE_SINGLE
   m_InvalidKeywords:
@@ -148,7 +149,7 @@ Material:
     - _FlatSpecularEdgeSmoothness: 0.5
     - _FlatSpecularEnabled: 1
     - _FlatSpecularSize: 0.5
-    - _Flatness: 0.832
+    - _Flatness: 1
     - _FlatnessExtra: 1
     - _FlatnessSecondary: 1
     - _GlossMapScale: 1
@@ -156,10 +157,10 @@ Material:
     - _GlossyReflections: 1
     - _GradientAngle: 0
     - _GradientCenterX: 0
-    - _GradientCenterY: 120
+    - _GradientCenterY: 140.53
     - _GradientEnabled: 1
     - _GradientEnd: 0.55
-    - _GradientSize: -150
+    - _GradientSize: 13.2
     - _GradientStart: 1.17
     - _HeightTransition: 0
     - _LightContribution: 0.5
@@ -182,10 +183,10 @@ Material:
     - _RimEnabled: 0
     - _SecondaryColor: 1
     - _SecondaryColorEnabled: 1
-    - _SelfShadingSize: 0.832
+    - _SelfShadingSize: 0.818
     - _SelfShadingSizeExtra: 0.5
     - _ShadowAmount: 0
-    - _ShadowEdgeSize: 0
+    - _ShadowEdgeSize: 0.127
     - _ShadowEdgeSizeExtra: 0.05
     - _ShadowEdgeSmoothness: 0.5
     - _ShadowFalloff: 0.01
@@ -205,11 +206,11 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.17176926, g: 0.1743322, b: 0.18867919, a: 1}
     - _Color: {r: 0.17176929, g: 0.17433223, b: 0.18867922, a: 1}
-    - _ColorDim: {r: 0.14150935, g: 0.14150935, b: 0.14150935, a: 1}
+    - _ColorDim: {r: 0.03529412, g: 0.3882353, b: 0.49803922, a: 1}
     - _ColorDimCurve: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
     - _ColorDimExtra: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
     - _ColorDimSteps: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
-    - _ColorGradient: {r: 0.31132078, g: 0.12775901, b: 0.16332224, a: 1}
+    - _ColorGradient: {r: 0, g: 0.30851033, b: 0.5169811, a: 1}
     - _ColorSecondary: {r: 1, g: 0.55879205, b: 0, a: 1}
     - _ColorShadow: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _ColorShadows: {r: 0.4627451, g: 0.40784314, b: 0.41833144, a: 1}
