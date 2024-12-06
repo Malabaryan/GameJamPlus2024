@@ -15,6 +15,12 @@ namespace BNG {
         protected Vector3 previousPosition;
         protected Quaternion previousRotation;
 
+        public void Start()
+        {
+            previousPosition = transform.position;
+            previousRotation = transform.rotation;
+        }
+
         protected void Update() {
             PositionDelta = transform.position - previousPosition;
             RotationDelta = transform.rotation * Quaternion.Inverse(previousRotation);
