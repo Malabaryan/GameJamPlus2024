@@ -87,13 +87,13 @@ PrefabInstance:
         type: 3}
       propertyPath: flowerMesh
       value: 
-      objectReference: {fileID: -8836323915577675755, guid: 44feaf8168658da49a72f081142b6b5a,
+      objectReference: {fileID: 1391480759776389327, guid: 64c31f188825e0443a64d1607928acf8,
         type: 3}
     - target: {fileID: 8935684833679373118, guid: 500a104d0b95c954c84c3ef73b4b24b4,
         type: 3}
       propertyPath: grabbableFlowerPrefab
       value: 
-      objectReference: {fileID: 9055334403653972565, guid: 5028e39343db1414aa9d82e52ac4f04b,
+      objectReference: {fileID: 4979465880128312456, guid: 2857bf27ae4ac71488cc21b14910243c,
         type: 3}
     - target: {fileID: 8940774795667647257, guid: 500a104d0b95c954c84c3ef73b4b24b4,
         type: 3}

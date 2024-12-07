@@ -43,6 +43,7 @@ public class PotBehavior : MonoBehaviour
 
         if (other.transform.CompareTag("Water") && hasBeenPlanted && currentCooldown > spawnCooldown)
         {
+            Debug.Log("Triggered water");
             currentCooldown = 0;
             flower.SetActive(true);
             flower.GetComponent<Animator>().Play("Flower");
@@ -69,6 +70,7 @@ public class PotBehavior : MonoBehaviour
         yield return new WaitForSeconds(1f);
         flower.SetActive(false);
         var instFlower = Instantiate(flowerPrefab, grabbableFlower.transform.position, grabbableFlower.transform.rotation);
+        instFlower.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         instFlower.transform.SetParent(transform, true);
         instFlower.SetActive(true);
         //switch(seedType)
