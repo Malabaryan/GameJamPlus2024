@@ -18,6 +18,8 @@ public class BouqueteBehavior : MonoBehaviour
         {
             finalMessage.SetActive(flower1.HeldItem != null && flower2.HeldItem != null && flower3.HeldItem != null);
         }
+        //Can grab infinite bouquetes, if this goes under -20 in height, kill it
+        if (transform.position.y < -20f) Destroy(gameObject);
     }
 
     public void UpdateFlowerType()
