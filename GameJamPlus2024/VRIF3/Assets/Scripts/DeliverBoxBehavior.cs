@@ -10,6 +10,7 @@ public class DeliverBoxBehavior : MonoBehaviour
     [SerializeField] private Transform lidTransform;
     [SerializeField] private Transform deliverPoint;
     [SerializeField] private Transform deliverVisualsTransform;
+    [SerializeField] private float deliverAnimationLifetime = 6f;
     [SerializeField] private float deliverValidDistance = 8f;
     [SerializeField] private float deliverSpeed = 10f;
 
@@ -55,15 +56,21 @@ public class DeliverBoxBehavior : MonoBehaviour
                 Debug.Log("FLOR DESEADA");
                 correctFlower = true;
                 buttonMesh.GetComponent<MeshRenderer>().material = correctMaterial;
-                AudioSource.PlayClipAtPoint(placedCorrectFlower, transform.position);
+                if(placedCorrectFlower != null)
+                    AudioSource.PlayClipAtPoint(placedCorrectFlower, transform.position);
             }
             else
             {
                 Debug.Log("FLOR NO DESEADA");
                 correctFlower = false;
                 buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
-                AudioSource.PlayClipAtPoint(placedWrongFlower, transform.position);
+                if (placedWrongFlower != null)
+                    AudioSource.PlayClipAtPoint(placedWrongFlower, transform.position);
             }
+        }
+        else
+        {
+            buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
         }
     }
 
@@ -71,20 +78,27 @@ public class DeliverBoxBehavior : MonoBehaviour
     {
         lidClosed = !lidClosed;
         lidTransform.localEulerAngles = new Vector3(lidClosed ? 0 : 130f, 0, 0);
-        buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
+        CheckDesiredFlower();
 
         //If not close enough to the deliver point
         if (Vector3.Distance(transform.position, deliverPoint.transform.position) > deliverValidDistance)
         {
-            AudioSource.PlayClipAtPoint(notCloseToDeliverPoint, transform.position);
+            if(notCloseToDeliverPoint != null)
+                AudioSource.PlayClipAtPoint(notCloseToDeliverPoint, transform.position);
             return;
         }
 
         if (correctFlower)
         {
+            //GameObject bouquete = bouquetSlot.HeldItem.gameObject;
+            //bouquetSlot.GrabGrabbable(null);
+            //Destroy(bouquete);
+            bouquetSlot.ReleaseAll();
             deliverVisualsTransform.gameObject.SetActive(true);
             shootingDelivery = true;
             correctFlower = false;
+            //Update mission information
+            GameObject.Find("MissionManager").GetComponent<MissionManager>().CompleteMission();
             AudioSource.PlayClipAtPoint(teleportSFX, transform.position);
         }
     }
@@ -92,7 +106,7 @@ public class DeliverBoxBehavior : MonoBehaviour
     private void ShootDelivery()
     {
         //Move Deliver VFX
-        Vector3 deliverDirection = (deliverPoint.position - transform.position).normalized;
+        Vector3 deliverDirection = (deliverPoint.position - transform.position).normalized * -1;
         deliverVisualsTransform.transform.Translate(deliverDirection * deliverSpeed * Time.deltaTime);
 
         //Check deliver distance
@@ -114,8 +128,10 @@ public class DeliverBoxBehavior : MonoBehaviour
 
     private IEnumerator ParticlesCooldown()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(deliverAnimationLifetime);
         deliverVisualsTransform.gameObject.SetActive(false);
-        deliverVisualsTransform.localPosition = Vector3.zero;
+        deliverVisualsTransform.localPosition = Vector3.zero + new Vector3(0, 0.2f, 0);
+        if(succesfulDeliver != null)
+            AudioSource.PlayClipAtPoint(succesfulDeliver, transform.position + new Vector3(0, 2f, 0));
     }
 }
