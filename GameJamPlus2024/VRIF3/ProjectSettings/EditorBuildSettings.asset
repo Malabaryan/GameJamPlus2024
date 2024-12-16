@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Plugins/BNG Framework/Scenes/Scene Transitioning.unity
     guid: 9d7c9629abf9c99449e358b0938b47d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ship.unity
     guid: 6d455d416351cc24ab25a5bd0d46829b
   - enabled: 0
@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Plugins/BNG Framework/Scenes/Quest Demo.unity
     guid: 20abffae0ea5004438fe0e95b6627841
+  - enabled: 1
+    path: Assets/Scenes/World.unity
+    guid: 9341d7a93bd14f04aabd4e103d524cb4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 414ac34cd6761264987dee1bf134e2fd,
       type: 2}

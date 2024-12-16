@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4535909583025000929}
   - component: {fileID: 7463290417644609899}
   - component: {fileID: 2260553198301164283}
+  - component: {fileID: 3108051552411634804}
   m_Layer: 0
   m_Name: mountain_1a
   m_TagString: Untagged
@@ -86,3 +87,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3108051552411634804
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8776214612518922326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.29
+  m_Height: 8.29
+  m_Direction: 1
+  m_Center: {x: -7.767901, y: 3.1086812, z: 4.9663596}
