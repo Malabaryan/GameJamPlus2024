@@ -106,8 +106,8 @@ public class DeliverBoxBehavior : MonoBehaviour
     private void ShootDelivery()
     {
         //Move Deliver VFX
-        Vector3 deliverDirection = (deliverPoint.position - transform.position).normalized * -1;
-        deliverVisualsTransform.transform.Translate(deliverDirection * deliverSpeed * Time.deltaTime);
+        Vector3 deliverDirection = (deliverPoint.position - transform.position).normalized;
+        deliverVisualsTransform.transform.Translate(deliverDirection * deliverSpeed * Time.deltaTime, Space.World);
 
         //Check deliver distance
         if (Vector3.Distance(deliverVisualsTransform.transform.position, deliverPoint.transform.position) < 0.3f)
