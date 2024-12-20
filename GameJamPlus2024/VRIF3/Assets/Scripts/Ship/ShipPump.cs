@@ -17,7 +17,8 @@ public class ShipPump : MonoBehaviour
 
     public void Start()
     {
-        CurrentValue = MinValue;
+        // El barco inicia pre-pumpeado
+        CurrentValue = 55;
         StartCoroutine(ReduceValue());
 
     }
