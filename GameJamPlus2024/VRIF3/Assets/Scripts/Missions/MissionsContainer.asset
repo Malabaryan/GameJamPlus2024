@@ -17,8 +17,20 @@ MonoBehaviour:
     missionDetail: Entrega a la abuela la flor de Cala
     missionExtra: Llevas en tu barco una flor que tu abuela te pidio, prepara el
       ramo y entrega debajo de la casa de la abuela.
-    missionInterface: {fileID: 0}
-  - missionName: 
-    missionDetail: 
-    missionExtra: 
-    missionInterface: {fileID: 0}
+    missionInterface: {fileID: 3472031038253474266, guid: fad085200abbc9b4aaf3c7850dd52273,
+      type: 3}
+    desiredFlower: 3
+  - missionName: Siembra una flor
+    missionDetail: Dispara a los arboles de pino para que liberen las semillas para
+      sembrar tu primer flor.
+    missionExtra: "Los \xE1rboles de pino se encuentran en las monta\xF1as."
+    missionInterface: {fileID: 2555490076152894730, guid: 581fac7113914de4680d51aef4493f3d,
+      type: 3}
+    desiredFlower: 2
+  - missionName: Siembra una flor
+    missionDetail: Dispara a los arboles de pino para que liberen las semillas para
+      sembrar tu primer flor.
+    missionExtra: "Los \xE1rboles de pino se encuentran en las monta\xF1as."
+    missionInterface: {fileID: 3472031038253474266, guid: 308fc41589601eb49a2aca1056192dc8,
+      type: 3}
+    desiredFlower: 0

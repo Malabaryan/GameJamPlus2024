@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,37 +6,41 @@ using UnityEngine.UI;
 public class MissionManager : MonoBehaviour
 {
     [SerializeField] private DeliverBoxBehavior deliverBox;
-    [SerializeField] private MissionsContainer missionsData;
+    [SerializeField] private MissionsContainer missionsContainer;
 
-    [SerializeField] private Image flowerImage;
-    [SerializeField] private Sprite flowerSprite;
-    [SerializeField] private TMP_Text missionText;
-    [SerializeField] private GameObject secondImageGameObject;
+    [SerializeField] private Transform missionCanvas;
 
     public AudioClip finishedDemo;
 
-    private bool secondMission = false;
+    private int currentMission = 0;
+
+    private void Start()
+    {
+        Instantiate(missionsContainer.missionsData[0].missionInterface, missionCanvas);
+        deliverBox.UpdateDesiredFlower(missionsContainer.missionsData[0].desiredFlower);
+        StartCoroutine(PassMission());
+    }
 
     public void CompleteMission()
     {
-        if (deliverBox != null)
-        {
-            if(secondMission)
-            {
-                //Oh God I hate my self for this, but I gotta run!
-                if(finishedDemo != null)
-                    AudioSource.PlayClipAtPoint(finishedDemo, deliverBox.transform.position);
-                missionText.text = "Thank you sweetheart! See you tomorrow!";
-                return;
-            }
+        if (currentMission + 1 == missionsContainer.missionsData.Length)
+            return;
 
-            //RANDOM COMMENT
-            deliverBox.UpdateDesiredFlower(SeedBehavior.SeedType.Flower);
-            flowerImage.sprite = flowerSprite;
-            missionText.text = "Lovely! Now I need a pine flower!";
-            secondImageGameObject.SetActive(true);
-            secondMission = true;
-            
+        if (missionCanvas.GetChild(0) != null)
+        {
+            Destroy(missionCanvas.GetChild(0).gameObject);
+            currentMission += 1;
+        }
+        Instantiate(missionsContainer.missionsData[currentMission].missionInterface, missionCanvas);
+        deliverBox.UpdateDesiredFlower(missionsContainer.missionsData[currentMission].desiredFlower);
+    }
+
+    IEnumerator PassMission()
+    {
+        for (int i = 0; i < missionsContainer.missionsData.Length; i++)
+        {
+            yield return new WaitForSeconds(3f);
+            CompleteMission();
         }
     }
 }
