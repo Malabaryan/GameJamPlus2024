@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MissionManager : MonoBehaviour
 {
     [SerializeField] private DeliverBoxBehavior deliverBox;
+    [SerializeField] private MissionsContainer missionsData;
 
     [SerializeField] private Image flowerImage;
     [SerializeField] private Sprite flowerSprite;
