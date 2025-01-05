@@ -16,8 +16,9 @@ public class EmulatorMode : MonoBehaviour
         VREmulator = GetComponent<VREmulator>();
         modeSwitch = VREmulator.HMDIsActive;
         PlayerMovingPlatformSupport.enabled  = !VREmulator.HMDIsActive;
-        
-               }
+        BowEmulator.Active = !VREmulator.HMDIsActive;
+
+    }
     // Update is called once per frame
     void Update()
     {
