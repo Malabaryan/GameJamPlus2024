@@ -53,7 +53,7 @@ public class DeliverBoxBehavior : MonoBehaviour
         {
             if (desiredFlower == bouquetSlot.HeldItem.transform.GetComponent<BouqueteBehavior>().flowerType)
             {
-                Debug.Log("FLOR DESEADA");
+                //Debug.Log("FLOR DESEADA");
                 correctFlower = true;
                 buttonMesh.GetComponent<MeshRenderer>().material = correctMaterial;
                 if(placedCorrectFlower != null)
@@ -61,7 +61,7 @@ public class DeliverBoxBehavior : MonoBehaviour
             }
             else
             {
-                Debug.Log("FLOR NO DESEADA");
+                //Debug.Log("FLOR NO DESEADA");
                 correctFlower = false;
                 buttonMesh.GetComponent<MeshRenderer>().material = wrongMaterial;
                 if (placedWrongFlower != null)

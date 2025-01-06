@@ -26,7 +26,7 @@ MonoBehaviour:
     missionExtra: "Los \xE1rboles de pino se encuentran en las monta\xF1as."
     missionInterface: {fileID: 2555490076152894730, guid: 581fac7113914de4680d51aef4493f3d,
       type: 3}
-    desiredFlower: 2
+    desiredFlower: 1
   - missionName: Siembra una flor
     missionDetail: Dispara a los arboles de pino para que liberen las semillas para
       sembrar tu primer flor.

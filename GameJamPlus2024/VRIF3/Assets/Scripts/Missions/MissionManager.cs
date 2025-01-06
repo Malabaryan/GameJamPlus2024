@@ -18,7 +18,7 @@ public class MissionManager : MonoBehaviour
     {
         Instantiate(missionsContainer.missionsData[0].missionInterface, missionCanvas);
         deliverBox.UpdateDesiredFlower(missionsContainer.missionsData[0].desiredFlower);
-        StartCoroutine(PassMission());
+        //StartCoroutine(PassMission()); Debugging only
     }
 
     public void CompleteMission()
