@@ -39,11 +39,17 @@ public class SeedSpawner : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         for (int i = 0; i < spawnAmount; i++)
         {
+            Vector3 shipPosition = GameObject.Find("Ship").transform.position;
             Instantiate(seedPrefab,
+                //new Vector3(
+                //    transform.position.x + Random.Range(-spawnRadius, spawnRadius),
+                //    transform.position.y + Random.Range(-0.5f, 0.5f),
+                //    transform.position.z + Random.Range(-spawnRadius, spawnRadius)
+                //    ),
                 new Vector3(
-                    transform.position.x + Random.Range(-spawnRadius, spawnRadius),
-                    transform.position.y + Random.Range(-0.5f, 0.5f),
-                    transform.position.z + Random.Range(-spawnRadius, spawnRadius)
+                    shipPosition.x + Random.Range(-spawnRadius, spawnRadius),
+                    shipPosition.y + Random.Range(-0.5f, 0.5f),
+                    shipPosition.z + Random.Range(-spawnRadius, spawnRadius)
                     ),
                 Quaternion.identity
                 );
