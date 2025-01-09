@@ -6,7 +6,8 @@ public class EmulatorMode : MonoBehaviour
 {
     public PlayerMovingPlatformSupport PlayerMovingPlatformSupport;
     public BowEmulator BowEmulator;
-
+    public UnityEvent VRModeEvents;
+    public UnityEvent FlatModeEvents;
     private VREmulator VREmulator;
 
     private bool modeSwitch;
@@ -28,7 +29,14 @@ public class EmulatorMode : MonoBehaviour
             BowEmulator.Active = !VREmulator.HMDIsActive;
 
             modeSwitch = VREmulator.HMDIsActive;
-
+            if (VREmulator.HMDIsActive)
+            {
+                VRModeEvents.Invoke();
+            }
+            else
+            {
+                FlatModeEvents.Invoke();
+            }
         }
     }
 }

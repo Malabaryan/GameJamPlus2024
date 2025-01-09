@@ -22,6 +22,7 @@ public class ShipController : MonoBehaviour {
     public float GasComsuption = 1;
     public ShipPump EnginePump;
     public Lever SpeedController;
+    public ShipTank TankController;
     [Header("Engine Status")]
     [Tooltip("Is the Engine on and ready for input. If false, engine will need to be started first.")]
     public bool EngineOn = false;
@@ -59,7 +60,6 @@ public class ShipController : MonoBehaviour {
     private bool breaking;
     bool wasHoldingSteering, isHoldingSteering;
 
-    public Transform DriverSeatTransform;
     private List<Collision> activeCollisions = new List<Collision>();
 
 
@@ -188,6 +188,7 @@ public class ShipController : MonoBehaviour {
             UpdateWheelTorque();
             if (CurrentSpeed != 0 && EnginePump.CurrentValue > 0)
                 EnginePump.CurrentValue -= GasComsuption * Time.fixedDeltaTime;
+                TankController.SetGasAmount(EnginePump.CurrentValue);
         }
     }
 
