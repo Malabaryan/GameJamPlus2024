@@ -77,7 +77,7 @@ public class DeliverBoxBehavior : MonoBehaviour
     public void CloseTheLid()
     {
         lidClosed = !lidClosed;
-        lidTransform.localEulerAngles = new Vector3(lidClosed ? 0 : 130f, 0, 0);
+        lidTransform.localEulerAngles = new Vector3(lidClosed ? 0 : 100f, 0, 0);
         CheckDesiredFlower();
 
         //If not close enough to the deliver point

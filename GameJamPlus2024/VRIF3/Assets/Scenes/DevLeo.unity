@@ -10303,10 +10303,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d14efab6c58ba94ea7c7534ab412c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deliverBox: {fileID: 0}
+  deliverBox: {fileID: 899821603768117346}
   missionsContainer: {fileID: 0}
   missionCanvas: {fileID: 0}
   finishedDemo: {fileID: 0}
+--- !u!114 &899821603768117346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8367813821002218751, guid: 5a6cb449616f707498d5e401e9ccd9cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 899821603768117343}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899821603768117344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d590d50500f35f34d999f798ec4b1f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919132147999225584
 GameObject:
   m_ObjectHideFlags: 0
@@ -20903,7 +20915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &7156835713863099205
 MeshRenderer:
   m_ObjectHideFlags: 0
