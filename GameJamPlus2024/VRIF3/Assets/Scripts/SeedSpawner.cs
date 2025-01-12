@@ -48,7 +48,7 @@ public class SeedSpawner : MonoBehaviour
                 //    ),
                 new Vector3(
                     shipPosition.x + Random.Range(-spawnRadius, spawnRadius),
-                    transform.position.y + Random.Range(-0.5f, 0.5f),
+                    shipPosition.y + Random.Range(-0.5f, 0.5f) + 2f, //Height offset
                     shipPosition.z + Random.Range(-spawnRadius, spawnRadius)
                     ),
                 Quaternion.identity
