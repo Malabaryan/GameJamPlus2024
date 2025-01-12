@@ -39,6 +39,8 @@ public class DeliverBoxBehavior : MonoBehaviour
 
     void Update()
     {
+        transform.localEulerAngles = new Vector3(105f, -90f, -90f);
+
         if(shootingDelivery)
             ShootDelivery();
     }

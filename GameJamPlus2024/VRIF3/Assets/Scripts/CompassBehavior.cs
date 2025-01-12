@@ -21,7 +21,7 @@ public class CompassBehavior : MonoBehaviour
     {
         if(increasing && needle.eulerAngles.y > maxShakingAngle && needle.eulerAngles.y < 360 - maxShakingAngle - 5f) increasing = false;
         if (!increasing && needle.eulerAngles.y < 360-maxShakingAngle && needle.eulerAngles.y > 360-maxShakingAngle-5f) increasing = true;
-        Debug.Log(needle.eulerAngles);
+        //Debug.Log(needle.eulerAngles);
 
         angle += (increasing ? 1 : -1) * shakingSpeed * Time.fixedDeltaTime;
         needle.transform.eulerAngles = northTransfrom.eulerAngles + new Vector3(0f, angle, 0f);
