@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 8051156610575683467}
   - component: {fileID: 4625765992288047888}
   - component: {fileID: 6108018085000945042}
-  - component: {fileID: 9109597538560829372}
   m_Layer: 0
   m_Name: Feather (4)
   m_TagString: Untagged
@@ -120,27 +119,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9109597538560829372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90532847904089354}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &188649437638459441
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +130,6 @@ GameObject:
   - component: {fileID: 7122419853956056081}
   - component: {fileID: 823533935705283476}
   - component: {fileID: 1144976257959253302}
-  - component: {fileID: 9105225441465682920}
   m_Layer: 0
   m_Name: Feather (4)
   m_TagString: Untagged
@@ -228,27 +205,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9105225441465682920
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188649437638459441}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &225935791650401244
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +216,6 @@ GameObject:
   - component: {fileID: 4847014525393179839}
   - component: {fileID: 2988083001659708369}
   - component: {fileID: 8257424447577406665}
-  - component: {fileID: 1907180176002622215}
   m_Layer: 0
   m_Name: Feather (3)
   m_TagString: Untagged
@@ -336,27 +291,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1907180176002622215
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225935791650401244}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &591759244690917639
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +334,6 @@ GameObject:
   - component: {fileID: 2136595723568450049}
   - component: {fileID: 800287050600354913}
   - component: {fileID: 3556819437228745414}
-  - component: {fileID: 4356804157129466815}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -476,27 +409,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4356804157129466815
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324694303003680154}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1639980327820889172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,7 +5253,6 @@ GameObject:
   - component: {fileID: 2557980383047116274}
   - component: {fileID: 4703349590893455119}
   - component: {fileID: 5665735023327774895}
-  - component: {fileID: 3234885112044098258}
   m_Layer: 0
   m_Name: Feather (2)
   m_TagString: Untagged
@@ -5417,27 +5328,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3234885112044098258
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984520607680135646}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2014120428820648825
 GameObject:
   m_ObjectHideFlags: 0
@@ -5535,7 +5425,6 @@ GameObject:
   - component: {fileID: 8557334141715388972}
   - component: {fileID: 51911082910510278}
   - component: {fileID: 2369144698934431559}
-  - component: {fileID: 7701691988799461064}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -5611,27 +5500,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7701691988799461064
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2253562315211319602}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2364604787515855363
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,7 +5878,6 @@ GameObject:
   - component: {fileID: 357695389184362718}
   - component: {fileID: 7120879416459271988}
   - component: {fileID: 6369803770720387821}
-  - component: {fileID: 1371458345872478451}
   m_Layer: 0
   m_Name: Feather (3)
   m_TagString: Untagged
@@ -6086,27 +5953,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1371458345872478451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4133512588461979966}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4307966870054936507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6405,7 +6251,6 @@ GameObject:
   - component: {fileID: 4231505858459114979}
   - component: {fileID: 4473241636699093517}
   - component: {fileID: 938923061224845898}
-  - component: {fileID: 3466982818584910173}
   m_Layer: 0
   m_Name: Feather (4)
   m_TagString: Untagged
@@ -6481,27 +6326,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3466982818584910173
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4718418827409084542}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5130351965431836220
 GameObject:
   m_ObjectHideFlags: 0
@@ -7030,7 +6854,6 @@ GameObject:
   - component: {fileID: 6786375840863643976}
   - component: {fileID: 5628607240095173736}
   - component: {fileID: 4104506051626123006}
-  - component: {fileID: 5299181911781658442}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -7106,27 +6929,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5299181911781658442
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5693524573761193304}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5793910115358306176
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,7 +7256,6 @@ GameObject:
   - component: {fileID: 4951968369200659132}
   - component: {fileID: 1376670926799654692}
   - component: {fileID: 9177372139744096027}
-  - component: {fileID: 2128667088708767370}
   m_Layer: 0
   m_Name: Feather (1)
   m_TagString: Untagged
@@ -7530,27 +7331,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2128667088708767370
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5944765376023114364}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6416824433398916053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7648,7 +7428,6 @@ GameObject:
   - component: {fileID: 8516817263759450997}
   - component: {fileID: 5428543718003142355}
   - component: {fileID: 1083529875008086641}
-  - component: {fileID: 5526401443541180518}
   m_Layer: 0
   m_Name: Feather (1)
   m_TagString: Untagged
@@ -7724,27 +7503,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5526401443541180518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6790937796094061509}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6957832278807674565
 GameObject:
   m_ObjectHideFlags: 0
@@ -7756,7 +7514,6 @@ GameObject:
   - component: {fileID: 4524453625186298396}
   - component: {fileID: 2494810997438311970}
   - component: {fileID: 4187438237761645681}
-  - component: {fileID: 8081626311080913175}
   m_Layer: 0
   m_Name: Feather (1)
   m_TagString: Untagged
@@ -7832,27 +7589,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8081626311080913175
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957832278807674565}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7110792694113675045
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,7 +7721,6 @@ GameObject:
   - component: {fileID: 7268125153394609184}
   - component: {fileID: 7460138742185498218}
   - component: {fileID: 2290039459452112597}
-  - component: {fileID: 936135471485267571}
   m_Layer: 0
   m_Name: Feather (2)
   m_TagString: Untagged
@@ -8061,27 +7796,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &936135471485267571
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197709719449110890}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7242529793543301229
 GameObject:
   m_ObjectHideFlags: 0
@@ -8093,7 +7807,6 @@ GameObject:
   - component: {fileID: 3534057760635064440}
   - component: {fileID: 8051706746480030394}
   - component: {fileID: 2384937489802824201}
-  - component: {fileID: 6289559073661531094}
   m_Layer: 0
   m_Name: Feather (3)
   m_TagString: Untagged
@@ -8169,27 +7882,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6289559073661531094
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7242529793543301229}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7483936660481207742
 GameObject:
   m_ObjectHideFlags: 0
@@ -8319,7 +8011,6 @@ GameObject:
   - component: {fileID: 687460956180083231}
   - component: {fileID: 798633881336426116}
   - component: {fileID: 8766250432215314419}
-  - component: {fileID: 3562474451888089351}
   m_Layer: 0
   m_Name: Feather (2)
   m_TagString: Untagged
@@ -8395,27 +8086,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3562474451888089351
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8426976863925843146}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8476181705116314954
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,7 +8183,6 @@ GameObject:
   - component: {fileID: 8193294664585615678}
   - component: {fileID: 1486166111557881822}
   - component: {fileID: 484030866540369155}
-  - component: {fileID: 6873374794728118968}
   m_Layer: 0
   m_Name: Feather (4)
   m_TagString: Untagged
@@ -8589,27 +8258,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6873374794728118968
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8638105241851866982}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8669683880739546152
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,7 +8269,6 @@ GameObject:
   - component: {fileID: 8318703898143703204}
   - component: {fileID: 509087822778173443}
   - component: {fileID: 643511797093683528}
-  - component: {fileID: 7511218544118252524}
   m_Layer: 0
   m_Name: Feather (2)
   m_TagString: Untagged
@@ -8697,27 +8344,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7511218544118252524
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8669683880739546152}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8882488987821948199
 GameObject:
   m_ObjectHideFlags: 0
@@ -8901,7 +8527,6 @@ GameObject:
   - component: {fileID: 6951026442120715763}
   - component: {fileID: 5163140421297745358}
   - component: {fileID: 5245291322496730117}
-  - component: {fileID: 4234594993305424126}
   m_Layer: 0
   m_Name: Feather (3)
   m_TagString: Untagged
@@ -8977,27 +8602,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4234594993305424126
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9094287793394986085}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9135891910433658628
 GameObject:
   m_ObjectHideFlags: 0
@@ -9009,7 +8613,6 @@ GameObject:
   - component: {fileID: 6118406357399903059}
   - component: {fileID: 7170874017836834798}
   - component: {fileID: 3554677257711308763}
-  - component: {fileID: 2752350218583401911}
   m_Layer: 0
   m_Name: Feather (1)
   m_TagString: Untagged
@@ -9085,27 +8688,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2752350218583401911
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9135891910433658628}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9203330191600929778
 GameObject:
   m_ObjectHideFlags: 0
@@ -9117,7 +8699,6 @@ GameObject:
   - component: {fileID: 3240473867808316540}
   - component: {fileID: 6613505853215439833}
   - component: {fileID: 8324525042022318107}
-  - component: {fileID: 4725071527902734813}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -9193,24 +8774,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4725071527902734813
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9203330191600929778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
