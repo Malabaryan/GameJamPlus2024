@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace BNG {
+    public enum ArrowType
+    {
+        Normal,
+        Fire
+    }
+
     /// <summary>
     /// A Grabbable object that can stick to objects and deal damage
     /// </summary>
@@ -23,6 +29,13 @@ namespace BNG {
 
         // Get this value from the ProjectileObject
         float arrowDamage;
+
+        // Fire arrow stuff
+        [Header("Fire arrow settings")]
+        public ArrowType type = ArrowType.Normal;
+        [SerializeField] GameObject fireFruitMesh;
+        [SerializeField] GameObject fireParticles;
+        [SerializeField] AudioSource fireSFX;
 
         // Start is called before the first frame update
         void Start() {
@@ -217,6 +230,14 @@ namespace BNG {
                 impactSound.Play();
                 impactSound.SetScheduledEndTime(AudioSettings.dspTime + (toSeconds - fromSeconds));
             }
+        }
+
+        public void TurnOnFire()
+        {
+            type = ArrowType.Fire;
+            fireFruitMesh.SetActive(true);
+            fireParticles.SetActive(true);
+            fireSFX.Play();
         }
     }
 }

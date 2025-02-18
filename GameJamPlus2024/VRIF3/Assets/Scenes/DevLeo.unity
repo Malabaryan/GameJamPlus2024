@@ -198,6 +198,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 87012237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &171151977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7978883794635771981, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+    type: 3}
+  m_PrefabInstance: {fileID: 1912224548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b646e2949ffb74c9ca8c512b4411df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &291039137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7014,6 +7026,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmokeParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 4119377011921201652, guid: b04e046c57cdf704e9b143d714b0e833,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8216782588164921335, guid: b04e046c57cdf704e9b143d714b0e833,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8614,8 +8631,55 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4447260942245074009, guid: d0de2fa957c66c64fba8f9eb879148f9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2960478949159076089}
+    - targetCorrespondingSourceObject: {fileID: 4447260942245074009, guid: d0de2fa957c66c64fba8f9eb879148f9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2960478949159076088}
   m_SourcePrefab: {fileID: 100100000, guid: d0de2fa957c66c64fba8f9eb879148f9, type: 3}
+--- !u!1 &2960478949159076087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4447260942245074009, guid: d0de2fa957c66c64fba8f9eb879148f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2960478949159076086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2960478949159076088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960478949159076087}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15, y: 0.15, z: 0.15}
+  m_Center: {x: 0, y: 0.09, z: 0}
+--- !u!114 &2960478949159076089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960478949159076087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6800cc8f4ee3344b53ec05f03636cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2977268886238582724
 Transform:
   m_ObjectHideFlags: 0
@@ -17678,7 +17742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldTimer: 5
-  snapZone: {fileID: 0}
+  snapZone: {fileID: 171151977}
 --- !u!4 &7337540229993960058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 796804836701225859, guid: 2748c59d4c3e372458369a2d13c3024a,
@@ -17951,74 +18015,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1500
   m_PresetInfoIsWorld: 1
---- !u!1001 &7642769736552600889
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.571
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.084
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426051682753744647, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7226778049575311953, guid: ccdf09368822e8d45ba50dc8728a00f0,
-        type: 3}
-      propertyPath: m_Name
-      value: FireParticles
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccdf09368822e8d45ba50dc8728a00f0, type: 3}
 --- !u!1 &7751387468362705958
 GameObject:
   m_ObjectHideFlags: 0
@@ -29069,5 +29065,4 @@ SceneRoots:
   - {fileID: 1017564841821820874}
   - {fileID: 859927742}
   - {fileID: 2960478949159076086}
-  - {fileID: 7642769736552600889}
   - {fileID: 1907690895326013242}
