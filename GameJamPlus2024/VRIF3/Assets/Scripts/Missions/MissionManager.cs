@@ -12,13 +12,24 @@ public class MissionManager : MonoBehaviour
 
     public AudioClip finishedDemo;
 
-    private int currentMission = 0;
+    public int currentMission = 0;
+
 
     private void Start()
     {
         Instantiate(missionsContainer.missionsData[0].missionInterface, missionCanvas);
         deliverBox.UpdateDesiredFlower(missionsContainer.missionsData[0].desiredFlower);
         //StartCoroutine(PassMission()); Debugging only
+    }
+
+    public void SetMission(int mission)
+    {
+        currentMission = mission;
+    }
+
+    public int GetMission()
+    {
+        return currentMission;
     }
 
     public void CompleteMission()
