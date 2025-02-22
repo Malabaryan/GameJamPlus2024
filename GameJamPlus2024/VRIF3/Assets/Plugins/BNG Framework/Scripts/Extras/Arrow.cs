@@ -22,7 +22,7 @@ namespace BNG {
         AudioSource impactSound;
 
         float flightTime = 0f;
-        float destroyTime = 10f; // Time in seconds to destroy arrow
+        float destroyTime = 15f; // Time in seconds to destroy arrow
         Coroutine queueDestroy;
 
         public Projectile ProjectileObject;
@@ -73,6 +73,10 @@ namespace BNG {
             if(queueDestroy != null && grab != null && grab.BeingHeld) {
                 StopCoroutine(queueDestroy);
             }
+
+            if (type == ArrowType.Fire) { 
+                fireParticles.transform.eulerAngles = new Vector3 (-90, 0, 0);
+            }
         }
 
         public void ShootArrow(Vector3 shotForce) {
@@ -94,7 +98,8 @@ namespace BNG {
         IEnumerator QueueDestroy() {
             yield return new WaitForSeconds(destroyTime);
 
-            if (grab != null && !grab.BeingHeld && transform.parent == null) {
+            //if (grab != null && !grab.BeingHeld && transform.parent == null) {
+            if (grab != null && !grab.BeingHeld) {
                 Destroy(this.gameObject);
             }
         }
