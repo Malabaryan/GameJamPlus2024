@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be880dc42f1ee74eb06a6bb7b233a3a, type: 3}
+  m_Name: FlowersContainer
+  m_EditorClassIdentifier: 
+  flowersData:
+  - SeedType: 3
+    seedPrefab: {fileID: 8717254805589994265, guid: 94598bb2360c4824680db4644275987e,
+      type: 3}
+    flowerPrefab: {fileID: 8335669171694653381, guid: c18f0ee4ed59f5344b6860f3bc067d07,
+      type: 3}
+  - SeedType: 2
+    seedPrefab: {fileID: 8717254805589994265, guid: c7e666ddf1ba54a4c83d93e3d26c4867,
+      type: 3}
+    flowerPrefab: {fileID: 4979465880128312456, guid: 2857bf27ae4ac71488cc21b14910243c,
+      type: 3}
+  - SeedType: 5
+    seedPrefab: {fileID: 8717254805589994265, guid: e923698cd34d085419d1a7264cdad30d,
+      type: 3}
+    flowerPrefab: {fileID: 4447260942245074009, guid: d0de2fa957c66c64fba8f9eb879148f9,
+      type: 3}
