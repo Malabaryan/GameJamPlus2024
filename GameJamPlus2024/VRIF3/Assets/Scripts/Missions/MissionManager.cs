@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -5,14 +6,17 @@ using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour
 {
+    public AudioClip finishedDemo;
+    public int currentMission = 0;
+    public PotBehavior[] PotList;
+    public FlowersContainer FlowersContainer;
+
     [SerializeField] private DeliverBoxBehavior deliverBox;
     [SerializeField] private MissionsContainer missionsContainer;
 
     [SerializeField] private Transform missionCanvas;
 
-    public AudioClip finishedDemo;
 
-    public int currentMission = 0;
 
 
     private void Start()

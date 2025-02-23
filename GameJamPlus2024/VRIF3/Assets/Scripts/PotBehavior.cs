@@ -1,19 +1,22 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class PotBehavior : MonoBehaviour
 {
-    [SerializeField] GameObject turnipIndicator;
-    [SerializeField] GameObject flower;
-    [SerializeField] MeshFilter potFlowerMesh;
-    [SerializeField] SeedBehavior.SeedType desiredSeed;
-    [SerializeField] GameObject flowerVisuals;
-    [SerializeField] GameObject grabbableFlower;
-    [SerializeField] float spawnCooldown = 10f;
+    public GameObject turnipIndicator;
+    public GameObject flower;
+    public MeshFilter potFlowerMesh;
+    public SeedBehavior.SeedType desiredSeed;
+    public GameObject flowerVisuals;
+    public GameObject grabbableFlower;
+    public float spawnCooldown = 10f;
 
-    private bool hasBeenPlanted = false;
-    private SeedBehavior.SeedType seedType;
-    [SerializeField] private GameObject flowerPrefab;
+    [NonSerialized]
+    public bool hasBeenPlanted = false;
+    [NonSerialized]
+    public SeedBehavior.SeedType SeedType;
+    public GameObject flowerPrefab;
 
     private float currentCooldown = 0f;
 
@@ -32,7 +35,7 @@ public class PotBehavior : MonoBehaviour
             hasBeenPlanted = true;
             turnipIndicator.SetActive(true);
             SeedBehavior seed = other.GetComponent<SeedBehavior>();
-            seedType = seed.type;
+            SeedType = seed.type;
             flowerPrefab = seed.grabbableFlowerPrefab;
             potFlowerMesh.mesh = seed.flowerMesh; //Change visual animation flower mesh
             Destroy(seed.gameObject);
@@ -41,6 +44,7 @@ public class PotBehavior : MonoBehaviour
         if (other.transform.CompareTag("Water") && hasBeenPlanted && currentCooldown > spawnCooldown)
         {
             Debug.Log("Triggered water");
+            turnipIndicator.SetActive(false);
             currentCooldown = 0;
             flower.SetActive(true);
             flower.GetComponent<Animator>().Play("Flower");
@@ -48,7 +52,7 @@ public class PotBehavior : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnGrabbableFlower()
+    public IEnumerator SpawnGrabbableFlower()
     {
         yield return new WaitForSeconds(1f);
         flower.SetActive(false);
@@ -57,4 +61,6 @@ public class PotBehavior : MonoBehaviour
         instFlower.transform.SetParent(transform, true);
         instFlower.SetActive(true);
     }
+
+
 }
