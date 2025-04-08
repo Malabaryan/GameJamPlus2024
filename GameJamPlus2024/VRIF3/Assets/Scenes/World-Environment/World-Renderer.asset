@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Name: FlatKitFog
   m_EditorClassIdentifier: 
   m_Active: 1
-  settings: {fileID: 11400000, guid: a1e398da2ea43e94b8e2a57e0383a250, type: 2}
+  settings: {fileID: 11400000, guid: 517b549fd8f317d428ad37cb88db49f4, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
