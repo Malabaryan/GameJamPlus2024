@@ -6,7 +6,8 @@ namespace BNG {
     public enum ArrowType
     {
         Normal,
-        Fire
+        Fire,
+        Bomb
     }
 
     /// <summary>
@@ -36,6 +37,11 @@ namespace BNG {
         [SerializeField] GameObject fireFruitMesh;
         [SerializeField] GameObject fireParticles;
         [SerializeField] AudioSource fireSFX;
+
+        // Bomb arrow stuff
+        [Header("Bomb arrow settings")]
+        [SerializeField] GameObject bombPrefab;
+        [SerializeField] GameObject explosionPrefab;
 
         // Start is called before the first frame update
         void Start() {
@@ -179,7 +185,13 @@ namespace BNG {
 
                     playSoundInterval(2.462f, 2.68f);
                 }                                
-            }            
+            }
+            if (type == ArrowType.Bomb)
+            {
+                GameObject explosionFX = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+                Destroy(explosionFX, 5f);
+                Debug.Log("EXPLOSION");
+            }
         }
 
         // Attach to collider
@@ -243,6 +255,13 @@ namespace BNG {
             fireFruitMesh.SetActive(true);
             fireParticles.SetActive(true);
             fireSFX.Play();
+        }
+
+        public void EnableBomb()
+        {
+            type = ArrowType.Bomb;
+            if(bombPrefab != null)
+                bombPrefab.SetActive(true);
         }
     }
 }
