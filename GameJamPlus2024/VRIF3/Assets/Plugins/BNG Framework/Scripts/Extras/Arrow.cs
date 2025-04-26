@@ -36,6 +36,7 @@ namespace BNG {
         public ArrowType type = ArrowType.Normal;
         [SerializeField] GameObject fireFruitMesh;
         [SerializeField] GameObject fireParticles;
+        [SerializeField] AudioClip fireStartupSFX;
         [SerializeField] AudioSource fireSFX;
 
         // Bomb arrow stuff
@@ -251,14 +252,19 @@ namespace BNG {
 
         public void TurnOnFire()
         {
+            if (type != ArrowType.Normal) return;
+
             type = ArrowType.Fire;
             fireFruitMesh.SetActive(true);
             fireParticles.SetActive(true);
             fireSFX.Play();
+            AudioSource.PlayClipAtPoint(fireStartupSFX, transform.position);
         }
 
         public void EnableBomb()
         {
+            if (type != ArrowType.Normal) return;
+
             type = ArrowType.Bomb;
             if(bombPrefab != null)
                 bombPrefab.SetActive(true);

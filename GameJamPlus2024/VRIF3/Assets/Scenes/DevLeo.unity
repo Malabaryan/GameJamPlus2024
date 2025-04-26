@@ -3069,11 +3069,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1452612051988773479, guid: 2748c59d4c3e372458369a2d13c3024a,
-        type: 3}
-      propertyPath: ArrowPrefabName
-      value: DandeliaArrow
-      objectReference: {fileID: 0}
     - target: {fileID: 5343015141263709697, guid: 2748c59d4c3e372458369a2d13c3024a,
         type: 3}
       propertyPath: m_ExcludeLayers.m_Bits

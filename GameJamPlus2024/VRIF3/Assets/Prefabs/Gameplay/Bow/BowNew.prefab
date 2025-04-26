@@ -385,7 +385,7 @@ MonoBehaviour:
   BowModel: {fileID: 3015982887169318177}
   ArrowRest: {fileID: 974722831273845034}
   CanGrabArrowFromKnock: 1
-  ArrowPrefabName: Arrow2
+  ArrowPrefabName: DandeliaArrow
   ArrowRestLeftHanded: {fileID: 1225500035008002546}
   ArrowKnock: {fileID: 1242027011472277616}
   IgnoreXPosition: 1
@@ -399,6 +399,7 @@ MonoBehaviour:
   MaxStringDistance: 0.65
   StringDistance: 0
   PercentageUI: {fileID: 0}
+  fireArrowReleaseSFX: {fileID: 8300000, guid: cf8476e91d3a08b48b5b520cb07365f7, type: 3}
   BowUp: {x: 0, y: 0, z: 1}
   AlignBowSpeed: 20
 --- !u!65 &9127152298692226175
@@ -1582,6 +1583,13 @@ MonoBehaviour:
   ZVel: 0
   ShaftCollider: {fileID: 4139696459309203581}
   ProjectileObject: {fileID: 3495589048510939005}
+  type: 0
+  fireFruitMesh: {fileID: 0}
+  fireParticles: {fileID: 0}
+  fireStartupSFX: {fileID: 0}
+  fireSFX: {fileID: 0}
+  bombPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 0}
 --- !u!114 &3495589048510939005
 MonoBehaviour:
   m_ObjectHideFlags: 0

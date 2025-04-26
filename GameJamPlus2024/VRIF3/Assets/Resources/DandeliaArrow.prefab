@@ -7201,6 +7201,7 @@ MonoBehaviour:
   type: 0
   fireFruitMesh: {fileID: 3244023675991483138}
   fireParticles: {fileID: 6353895121081615804}
+  fireStartupSFX: {fileID: 8300000, guid: 2ef8f87001b1b6a48b3532f5f8393f2f, type: 3}
   fireSFX: {fileID: 4784016431352355937}
   bombPrefab: {fileID: 2113171922294631382}
   explosionPrefab: {fileID: 7728839421400624237, guid: f9122779e2fff5f4a882dbc22ab84972,
@@ -7352,8 +7353,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1c1a90684752acf4ab8080cad974565d, type: 3}
-  m_Resource: {fileID: 8300000, guid: 1c1a90684752acf4ab8080cad974565d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 439ac10c9ba46bf479e9cc48d1bbeb13, type: 3}
+  m_Resource: {fileID: 8300000, guid: 439ac10c9ba46bf479e9cc48d1bbeb13, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1

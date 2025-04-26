@@ -79,6 +79,9 @@ namespace BNG {
         [Header("Debug Text")]
         public Text PercentageUI;
 
+        [Header("FireArrowSFX")]
+        public AudioClip fireArrowReleaseSFX;
+
         // Used for bow haptics
         List<DrawDefinition> drawDefs;
 
@@ -435,6 +438,13 @@ namespace BNG {
         }
 
         void playBowRelease() {
+            if (GrabbedArrow != null && GrabbedArrow.type == ArrowType.Fire) 
+            {
+                AudioSource.PlayClipAtPoint(fireArrowReleaseSFX, transform.position);
+                return;
+            }
+
+            //Normal release SFX
             playSoundInterval(1.67f, 2.2f, 0.3f);
         }
     }
