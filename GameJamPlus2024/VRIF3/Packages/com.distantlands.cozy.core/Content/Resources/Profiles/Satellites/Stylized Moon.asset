@@ -27,8 +27,8 @@ MonoBehaviour:
   rotationPeriod: 28
   rotationPeriodOffset: 0
   satelliteRotateAxis: {x: 0, y: 0, z: 0}
-  satelliteDirection: 0
-  satelliteRotation: 134.30312
+  satelliteDirection: 43.1
+  satelliteRotation: -2.770968
   satellitePitch: 0
   declination: 30
   declinationPeriod: 192
