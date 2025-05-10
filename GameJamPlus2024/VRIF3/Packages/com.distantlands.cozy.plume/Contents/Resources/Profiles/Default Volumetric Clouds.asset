@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb441307b439a445a1de4f47a4ed6ef, type: 3}
   m_Name: Default Volumetric Clouds
   m_EditorClassIdentifier: 
-  cloudDensity: 21.21
+  cloudDensity: 22.2
   cloudParticleSize: 42
-  chunkSize: 170
-  minChunkHeight: 0
-  maxChunkHeight: 180
+  chunkSize: 270
+  minChunkHeight: 50
+  maxChunkHeight: 120
   renderDistance: 20
   cloudHeight: 62
   cloudHeightDistrubution: 2

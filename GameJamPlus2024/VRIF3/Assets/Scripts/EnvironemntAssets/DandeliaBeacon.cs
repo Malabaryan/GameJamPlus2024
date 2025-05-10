@@ -16,8 +16,12 @@ public class DandeliaBeacon : MonoBehaviour
 
     private bool shouldRise = false;
 
+    private AudioSource beaconAudioSource;
+
     private void Start()
     {
+        beaconAudioSource = GetComponent<AudioSource>();
+
         //Hide beacon
         transform.position = transform.position + new Vector3(0f, -105f, 0f);
 
@@ -35,6 +39,7 @@ public class DandeliaBeacon : MonoBehaviour
             ActivateBeacon();
             shouldRise = false;
             beaconParticleSystem.Stop();
+            beaconAudioSource.Stop();
         }       
     }
 
@@ -48,5 +53,6 @@ public class DandeliaBeacon : MonoBehaviour
     {
         shouldRise = true;
         beaconParticleSystem.Play();
+        beaconAudioSource.Play();
     }
 }
