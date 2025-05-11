@@ -36,7 +36,7 @@ public class DandeliaBeacon : MonoBehaviour
         transform.Translate(Vector3.up * Time.deltaTime * riseSpeed);
         if(transform.position.y >= desiredHeight)
         {
-            ActivateBeacon();
+            //ActivateBeacon();
             shouldRise = false;
             beaconParticleSystem.Stop();
             beaconAudioSource.Stop();
