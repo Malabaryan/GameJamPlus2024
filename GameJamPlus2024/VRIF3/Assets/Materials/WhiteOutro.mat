@@ -178,7 +178,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 902.1329, g: 902.1329, b: 902.1329, a: 4.1088333}
+    - _BaseColor: {r: 484.03455, g: 484.03455, b: 484.03455, a: 2.7091708}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _ColorDim: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
