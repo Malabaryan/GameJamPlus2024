@@ -183,13 +183,16 @@ public class ShipController : MonoBehaviour {
 
         // Update speedometer
         CurrentSpeed = correctValue(rb.linearVelocity.magnitude * 3.6f);
-        if(EnginePump.CurrentValue > 0)
-        {
-            UpdateWheelTorque();
-            if (CurrentSpeed != 0 && EnginePump.CurrentValue > 0)
-                EnginePump.CurrentValue -= GasComsuption * Time.fixedDeltaTime;
-                TankController.SetGasAmount(EnginePump.CurrentValue);
-        }
+        //if(EnginePump.CurrentValue > 0)
+        //{
+        //    UpdateWheelTorque();
+        //    if (CurrentSpeed != 0 && EnginePump.CurrentValue > 0)
+        //        EnginePump.CurrentValue -= GasComsuption * Time.fixedDeltaTime;
+        //        TankController.SetGasAmount(EnginePump.CurrentValue);
+        //}
+
+        //Removed pump logic to push ship
+        UpdateWheelTorque();
     }
 
 
