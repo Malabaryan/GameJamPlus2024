@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     public SaveManager SaveManager;
     public MissionManager MissionManager;
+    public ScoreManager ScoreManager;
+    public TrailManager TrailManager;
     public GameObject ShipGameObject;
 
     private void Awake()
@@ -26,9 +28,10 @@ public class GameManager : MonoBehaviour
         SaveManager.Load();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetTrail(bool state)
     {
-        
+        ScoreManager.SetTrailState(state);
+        if(state)
+            TrailManager.StartTimer();
     }
 }
