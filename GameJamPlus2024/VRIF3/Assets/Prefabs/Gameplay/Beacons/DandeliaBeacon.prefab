@@ -5103,6 +5103,7 @@ GameObject:
   - component: {fileID: 3801668615996575810}
   - component: {fileID: 6708894127937632993}
   - component: {fileID: 7280925644406118590}
+  - component: {fileID: 6396749900847256974}
   m_Layer: 0
   m_Name: Breakable (1)
   m_TagString: Untagged
@@ -5202,7 +5203,7 @@ MonoBehaviour:
   - {fileID: 7394339268457864050}
   DeactivateCollidersOnDeath:
   - {fileID: 6708894127937632993}
-  DestroyOnDeath: 0
+  DestroyOnDeath: 1
   DropOnDeath: 1
   DestroyDelay: 10
   Respawn: 1
@@ -5217,6 +5218,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3076032083714831570}
         m_TargetAssemblyTypeName: DandeliaBeacon, Assembly-CSharp
         m_MethodName: ActivateBeacon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6396749900847256974}
+        m_TargetAssemblyTypeName: ScoreSpawner, Assembly-CSharp
+        m_MethodName: SpawnScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5263,6 +5276,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateAmount: {x: 0, y: 0, z: 40}
+--- !u!114 &6396749900847256974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543011756803781079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9aa430c955833408b98a0d4b9ec5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 500
+  scoreUIPrefab: {fileID: 7580151986300197020, guid: a1a8ba2cb1b4a0b4cb273c28d9646334,
+    type: 3}
 --- !u!1 &1462247505459696036
 GameObject:
   m_ObjectHideFlags: 0

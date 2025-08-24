@@ -5,7 +5,7 @@ public class ScoreManager : MonoBehaviour
     public int bestScore = 0;
 
     private bool isTrailTimerRunning = false;
-    private int currentScore = 0;
+    [SerializeField] private int currentScore = 0;
 
     public void AddScore(int score)
     {
