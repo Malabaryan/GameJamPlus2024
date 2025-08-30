@@ -15,7 +15,7 @@ public class ScoreUI : MonoBehaviour
     public void setScore(int score)
     {
         currentScore = score;
-        GameManager.Instance.ScoreManager.AddScore(score);
+        //GameManager.Instance.ScoreManager.AddScore(score);
         scoreLabel.text = score.ToString();
     }
 

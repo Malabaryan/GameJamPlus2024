@@ -7,7 +7,7 @@ public class ScoreSpawner : MonoBehaviour
 
     public void SpawnScore()
     {
-        GameObject scorePrefab = Instantiate(scoreUIPrefab, transform.position, Quaternion.identity);
+        GameObject scorePrefab = Instantiate(scoreUIPrefab, transform.position + Vector3.up, Quaternion.identity);
         scorePrefab.GetComponent<ScoreUI>().setScore(score);
         GameManager.Instance.ScoreManager.AddScore(score);
     }

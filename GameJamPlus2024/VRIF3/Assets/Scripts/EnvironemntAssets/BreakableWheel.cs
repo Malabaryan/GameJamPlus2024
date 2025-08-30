@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BreakableWheel : MonoBehaviour
 {
     public GameObject confettiPrefab;
 
     [SerializeField] private bool[] destroyedTargets;
+
+    public UnityEvent onDestroyed;
 
     public void DestroyTarget(int index)
     {
@@ -27,5 +30,6 @@ public class BreakableWheel : MonoBehaviour
         //if it gets here, all targets were destroyed
         GameObject confetti = Instantiate(confettiPrefab, transform.position, Quaternion.identity);
         Destroy(confetti, 5f);
+        onDestroyed.Invoke();
     }
 }
